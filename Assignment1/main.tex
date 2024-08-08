@@ -1,0 +1,126 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{multicol}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{Assignment-1}
+\author{EE24BTECH11020 - Ellanti Rohith% <-this % stops a space
+}
+\maketitle
+\newpage
+\bigskip
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+	\item {If, for positive integer n,the quadratic equation, $x(x+1)+(x+1)(x+2)+....(x+{n-1})(x+n)=10n$  has two consecutive integral solutions, then n is equal to:     \hfill{[JEE M 2017]} \begin{multicols}{2} 
+\begin{enumerate}
+    \item {11}
+    \item{12}
+    \columnbreak
+    \item {9} 
+    \item{10}\end{enumerate} 
+    \end{multicols}}
+
+
+ \item{For any three positive real number a,b and c $9(25a^2+b^2)+ 25(c^2-3ac) = 15b(3a+c)$. Then:\\ \hfill{[JEE M 2017]}\begin{multicols}{2}
+	 \begin{enumerate}\itemsep.5em
+  \item{a,b and c are in A.P}
+  \item{b,c and a are in G.P}
+  \columnbreak
+  \item{b,c and a are in A.P}
+  \item{a,b and c are in G.P}
+  \end{enumerate}
+  \end{multicols}}
+  \item{Let a,b,c$\epsilon$ R. If $f(x)=ax^2+bx+c$ is such that a+b+c=3 and f(x+y)=f(x)+f(y) $\forall$ x,y $\epsilon$ R, then $\sum _{n=1}^{10}$  f(n)  is  equal  to\hfill{[2017]}\\\\(a)255 \hspace{2cm}(b)330\\(c)165 \hspace{2cm}(d)190} 
+  \item{Let $a_{1},a_{2},a_{3},...,a_{49}$ be an A.P such that $\sum_{k=0}^{12} a_{4k+1}=416$ and $a_{9}+a_{43}=66$. If $a_{1}^2+ a_{2}^{2}+...+a_{17}^{2}=140m$, then m is equal to:\hfill{[JEE M 2018]}\begin{enumerate}
+  \begin{multicols}{2
+  }\item {68}\item {34}\columnbreak\item{33}  \item{66}
+  \end{multicols}
+  \end{enumerate}}
+  \item{Let A be the sum of the frst 20 terms and B be the sum of the first 40 terms of the series \[1^{2} +2\cdot2^{2}+3^{2}+2\cdot4^{2}+5^{2}+2\cdot6^{2}+...\] If B-2A=100$\lambda$, then $\lambda$ can be\hfill{[JEE M 2018]\begin{enumerate}
+  \begin{multicols}{2}
+  \item {248} \item{464}\columnbreak
+  \item{496}
+  \item{232}
+  \end{multicols}
+  \end{enumerate}}
+  \item{If a, b and c be three distinct real numbers in GP. and $a+b+c=xb$, then x cannot be:\hfill{[JEE M 2019]}
+\begin{enumerate}
+  \begin{multicols}{2}
+  \item {-2} \item{4}\columnbreak
+  \item{-3}
+  \item{2}
+  \end{multicols}
+  \end{enumerate}}
+  \item {Let $a_{1},a_{2},......a_{30}$ be an A.P, $S=\sum_{i=1}^{30} and T=\sum_{i=2}^{15}a_{(2i-1)}$. If $a_{5}=27$
+	  nd S-2T=75, then $a_{10}$ is equal to \hfill{[JEE M 2019]}
+\begin{enumerate}
+  \begin{multicols}{2}
+  \item {52} \item{57}\columnbreak
+  \item{47}
+  \item{42}
+  \end{multicols}
+  \end{enumerate}}
+\item{Three circles of radii a, b, c ($a<b<c$) touch each other externally. If they have x-axis as a common tangent, then:\hfill{[JEE M 2019]}\begin{enumerate} \itemsep.5em	
+  
+  \item {$\frac{1}{\sqrt{a}}=\frac{1}{\sqrt{b}}+\frac{1}{\sqrt{c}}$} 
+  \item {$\frac{1}{\sqrt{b}}=\frac{1}{\sqrt{c}}+\frac{1}{\sqrt{a}}$} 
+  \item{a,b and c are in A.P}
+  \item{${\sqrt{a}}={\sqrt{b}}+{\sqrt{c}}$}
+  \end{enumerate}} 
+  \item{Let the sum of the first n terms of a non-constant A.P.,$a_{1},a_{2},a_{3}$... be 50n + $\dfrac{n(n-7)}{2}A$
+	  where A is a constant. If d is the common difference of this A.P, then ordered pair (d,$a_{50}$) is equal to\hfill{[JEE M 2019]}} \vspace{.5em}\begin{enumerate}
+		  \itemsep.5em  \item {(50, 50+46A)} \item{(50, 50+45A)}
+  \item{(A, 50+45A)}
+  \item{(A, 50+46A)}
+  \end{enumerate}}
+  \end{enumerate}
+  
+\end{document}
+
