@@ -1,3 +1,4 @@
+
 import ctypes
 import numpy as np
 import matplotlib.pyplot as plt
@@ -25,26 +26,22 @@ x = points_np[:, 0]
 y = points_np[:, 1]
 label_color = 'black'
 
+# Define points
 points = {'A (0, 6)': (0, 6), 'B (0, -2)': (0, -2)}
 
+# Plot the line segment
+plt.plot(x, y, marker='o', color='black')  # Color of the line segment
 
-# Plot points
+# Add labels for each point using plot
 for point, coord in points.items():
-    plt.scatter(*coord, label=f'{point} {coord}', s=150,color=label_color)  # s is the size of the marker
-
-# Add labels for each point
-for point, coord in points.items():
-    plt.text(coord[0], coord[1], f' {point}',color=label_color, fontsize=16)
+    plt.plot(*coord, 'o', color=label_color, markersize=10)  # Mark points
+    plt.text(coord[0], coord[1], f' {point}', color=label_color, fontsize=16)
 
 # Set the limits of the axes
 plt.xlim(-1, 1)
 plt.ylim(-4, 8)
 
-
-
-
-# Plotting the line segment
-plt.plot(x, y, marker='o')
+# Set labels and title
 plt.title(f'Line Segment from (0, 6) to (0, -2)')
 plt.xlabel('X')
 plt.ylabel('Y')
