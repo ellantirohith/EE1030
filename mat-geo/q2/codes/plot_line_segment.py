@@ -30,7 +30,7 @@ label_color = 'black'
 points = {'A (0, 6)': (0, 6), 'B (0, -2)': (0, -2)}
 
 # Plot the line segment
-plt.plot(x, y, marker='o', color='black')  # Color of the line segment
+plt.plot(x, y, color='black')  # Color of the line segment
 
 # Add labels for each point using plot
 for point, coord in points.items():
