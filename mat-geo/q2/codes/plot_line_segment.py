@@ -24,6 +24,25 @@ points_np = np.array(points[:], dtype=np.float32).reshape((NUM_POINTS, 2))
 x = points_np[:, 0]
 y = points_np[:, 1]
 
+
+points = {'A (0, 6)': (0, 6), 'B (0, -2)': (0, -2)}
+
+
+# Plot points
+for point, coord in points.items():
+    plt.scatter(*coord, label=f'{point} {coord}', s=150)  # s is the size of the marker
+
+# Add labels for each point
+for point, coord in points.items():
+    plt.text(coord[0], coord[1], f' {point}', fontsize=16)
+
+# Set the limits of the axes
+plt.xlim(-1, 1)
+plt.ylim(-4, 8)
+
+
+
+
 # Plotting the line segment
 plt.plot(x, y, marker='o')
 plt.title(f'Line Segment from (0, 6) to (0, -2)')
