@@ -1,24 +1,36 @@
-import matplotlib.pyplot as plt
-import numpy as np
 import ctypes
+import numpy as np
+import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d.art3d import Line3DCollection
 
 # Load the shared library
 lib = ctypes.CDLL('./libvector_data.so')
 
+# Define the return type of the function (pointer to double)
+lib.generate_vector_data.restype = ctypes.POINTER(ctypes.c_double)
+
 # Define the argument types for the function
-lib.generate_vector_data.argtypes = [ctypes.c_char_p, ctypes.c_int]
+lib.generate_vector_data.argtypes = [ctypes.c_double, ctypes.c_double, ctypes.c_double, ctypes.c_int]
 
-# Specify the filename and number of points
-filename = 'vector_data.txt'
-num_points = 1000
+# Python function to call the C function and get the points
+def generate_vector_data(x, y, z, num_points):
+    # Call the C function, which returns a pointer to the array
+    output_ptr = lib.generate_vector_data(x, y, z, num_points)
 
-# Call the C function to generate data
-lib.generate_vector_data(filename.encode('utf-8'), num_points)
+    # Convert the pointer into a numpy array (num_points * 3 for x, y, z components)
+    output_array = np.ctypeslib.as_array(output_ptr, shape=(num_points * 3,))
 
-# Read the data from the file
-data = np.loadtxt(filename)
+    # Reshape the array to have dimensions (num_points, 3) for x, y, z components
+    points = output_array.reshape(num_points, 3)
 
+    return points
+
+# Example usage
+x, y, z = 3.0, 3.0, 3.0  # Vector components
+num_points = 1000  # Number of points to generate
+
+# Call the function to get the points directly as an array
+points = generate_vector_data(x, y, z, num_points)
 # Configure LaTeX rendering in Matplotlib
 plt.rcParams['text.usetex'] = True
 
@@ -27,7 +39,7 @@ fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 
 # Plot the vector path with black color
-ax.plot(data[:, 0], data[:, 1], data[:, 2], color='black', label=r'Vector $\vec{r}$')
+ax.plot(points[:, 0], points[:, 1], points[:, 2], color='black', label=r'Vector $\vec{r}$')
 
 # Draw the arrow at the end of the vector with black color
 start_point = [0, 0, 0]
