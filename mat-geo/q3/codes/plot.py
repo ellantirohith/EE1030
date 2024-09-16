@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import ctypes
-from mpl_toolkits.mplot3d import Axes3D
+from mpl_toolkits.mplot3d.art3d import Line3DCollection
 
 # Load the shared library
 lib = ctypes.CDLL('./libvector_data.so')
@@ -37,8 +37,35 @@ ax.quiver(start_point[0], start_point[1], start_point[2],
           end_point[1] - start_point[1], 
           end_point[2] - start_point[2], 
           color='black', 
-          arrow_length_ratio=0.05)  # Adjust this value to control the arrow size
-          
+          arrow_length_ratio=0.05)
+
+# Function to plot the circumference of an arc
+def plot_arc(ax, center, start_vec, axis_vec, radius, theta_start, theta_end, color):
+    theta = np.linspace(theta_start, theta_end, 100)
+    x = center[0] + radius * np.cos(theta) * start_vec[0] + radius * np.sin(theta) * axis_vec[0]
+    y = center[1] + radius * np.cos(theta) * start_vec[1] + radius * np.sin(theta) * axis_vec[1]
+    z = center[2] + radius * np.cos(theta) * start_vec[2] + radius * np.sin(theta) * axis_vec[2]
+    ax.plot(x, y, z, color=color)
+
+# Define the radius for the arcs and angles for each axis
+arc_radius = 1
+theta_start = 0
+theta_end =(np.pi / 3)*1.55  # 60 degrees arc, roughly corresponding to ~54.74 degrees
+
+# Plot arcs between the vector and the axes
+plot_arc(ax, center=[0, 0, 0], start_vec=[1, 0, 0], axis_vec=[0.578, 0.578, 0.578], radius=arc_radius, theta_start=theta_start, theta_end=theta_end, color='red')  # X axis arc
+plot_arc(ax, center=[0, 0, 0], start_vec=[0, 1, 0], axis_vec=[0.578, 0.578, 0.578], radius=arc_radius, theta_start=theta_start, theta_end=theta_end, color='green')  # Y axis arc
+plot_arc(ax, center=[0, 0, 0], start_vec=[0, 0, 1], axis_vec=[0.578, 0.578, 0.578], radius=arc_radius, theta_start=theta_start, theta_end=theta_end, color='blue')  # Z axis arc
+
+ax.text(1.5, 0, 0, r'$\theta_X = \cos^{-1}\left(\frac{1}{\sqrt{3}}\right) $', color='red', fontsize=12)  # Angle with X axis
+ax.text(0, 1.5, 0, r'$\theta_Y = \cos^{-1}\left(\frac{1}{\sqrt{3}}\right) $', color='green', fontsize=12)  # Angle with Y axis
+ax.text(0, 0, 1.5, r'$\theta_Z = \cos^{-1}\left(\frac{1}{\sqrt{3}}\right) $', color='blue', fontsize=12)  # Angle with Z axis
+
+# Draw the axes as lines
+ax.plot([0, 4], [0, 0], [0, 0], color='red', linestyle='--', label=r'X axis')  # X axis
+ax.plot([0, 0], [0, 4], [0, 0], color='green', linestyle='--', label=r'Y axis')  # Y axis
+ax.plot([0, 0], [0, 0], [0, 4], color='blue', linestyle='--', label=r'Z axis')  # Z axis
+
 # Labeling the plot
 ax.set_xlabel(r'X axis', color='black')
 ax.set_ylabel(r'Y axis', color='black')
@@ -46,7 +73,7 @@ ax.set_zlabel(r'Z axis', color='black')
 ax.legend()
 
 # Set title with black color
-plt.title(r'Vector $\vec{r}$', color='black')
+plt.title(r'Vector $\vec{r}$ and Angles with Axes', color='black')
 
 # Show the plot
 plt.show()
