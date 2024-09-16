@@ -25,7 +25,7 @@ def generate_vector_data(x, y, z, num_points):
 
     return points
 
-# Example usage
+
 x, y, z = 3.0, 3.0, 3.0  # Vector components
 num_points = 1000  # Number of points to generate
 
