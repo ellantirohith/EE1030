@@ -1,0 +1,269 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2023 January 29 Shift-1}
+\author{EE24BTECH11020 -  Ellanti Rohith}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+
+% 1
+\item The domain of $f\brak{x} = \frac{\log_{(x+1)}(x-2)}{e^{2 \log_e x} - (2x + 3)} $, $ x \in \mathbb{R} $, is:\hfill(Jan 2023)
+\begin{multicols}{4}
+    \begin{enumerate}
+    \item $\mathbb{R} - \cbrak{1,-3}$ 
+    \item $\brak{2,\infty} - \cbrak{3}$ 
+     \item $\brak{1,\infty} - \cbrak{3}$ 
+    \item $\mathbb{R} - \cbrak{-3}$ 
+\end{enumerate}
+\end{multicols}
+
+
+%2
+\item Let$f: \mathbb{R} \to \mathbb{R} $ be a function such that:
+   \begin{align*}
+        f(x) = \frac{x^2 + 2x + 1}{x^{2} + 1}
+   \end{align*}
+   Then:\hfill(Jan 2023)
+   \begin{enumerate}
+       \item $f\brak{x}$  is many-one in  $\brak{-\infty, -1}$
+       \item $f\brak{x}$  is many-one in  $\brak{1,\infty}$
+       \item $f\brak{x}$ \text{ is one-one in } $[1 ,\infty) $ \text{ but not in } $\brak{-\infty, \infty}$
+
+       
+       \item $ f\brak{x}$  is one-one in  $\brak{-\infty, \infty}$
+   \end{enumerate}
+
+%3
+\item For two non-zero complex numbers  $z_1 $ and $z_2$, if:
+\begin{align*}
+   \text{Re}(z_1 z_2) = 0 \quad \text{and} \quad \text{Re}(z_1 + z_2) = 0,
+\end{align*}
+then which of the following are possible?
+   \begin{enumerate}
+       \item Im$\brak{z_1} > 0$ and Im$\brak{z_2} > 0$
+       \item Im$\brak{z_1} < 0$ and Im$\brak{z_2} > 0$
+      \item Im$\brak{z_1} > 0$ and Im$\brak{z_2} < 0$
+      \item Im$\brak{z_1} < 0$ and Im$\brak{z_2} < 0$
+   \end{enumerate}
+   Choose the correct answer from the options given below :\hfill(Jan 2023)
+\begin{multicols}{4}
+   \begin{enumerate}
+       \item $B$ and $D$
+       \item $B$ and $C$
+       \item $A$ and $B$
+       \item $A$ and $C$
+   \end{enumerate}
+\end{multicols}
+% 4
+\item Let $\lambda \neq 0$ be a real number. Let $\alpha, \beta$ be the roots of the equation $ 14x^2 - 31x + 3\lambda = 0 $ and $\alpha, \gamma $ be the roots of the equation $ 35x^2 - 53x + 4\lambda = 0. $Then 
+$ \frac{3\alpha}{\beta} \quad \text{and} \quad \frac{4\alpha}{\gamma} $ 
+are the roots of the equation:\hfill(Jan 2023)
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $ 7x^2 + 245x - 250 = 0$
+    \item $ 7x^2 - 245x + 250 = 0$
+    \item $ 49x^2 - 245x + 250 = 0$
+    \item $ 49x^2 + 245x + 250 = 0 $
+\end{enumerate}
+\end{multicols}
+% 5
+\item Consider the system of equations:
+   \begin{align*}
+   \alpha x + 2y + z &= 1 \\
+   2\alpha x + 3y + z &= 1 \\
+   3x + \alpha y + 2z &= \beta
+   \end{align*}
+   For some \( \alpha, \beta \in \mathbb{R} \), which of the following is NOT correct?\hfill(Jan 2023)
+
+   \begin{enumerate}
+       \item No solution if $\alpha = -1$  and $\beta \neq 2$
+       \item No solution for $\alpha = -1$ for all $\beta \in \mathbb{R}$
+       \item No solution for $\alpha = 3$ and $\beta \neq 2$
+       \item Solution for all $\alpha \neq -1$ and $\beta = 2$
+   \end{enumerate}
+
+% 6
+\item Let $\alpha$ and $\beta$ be real numbers. Consider a $ 3 \times 3$ matrix $A$ such that:$A^2 = 3A + \alpha$I. If $A^4 = 21A + \beta$I   Then:\hfill(Jan 2023)
+\begin{multicols}{4}
+   \begin{enumerate}
+       \item $\alpha = 1$
+       \item $\alpha = 4$
+       \item $\beta = 8$
+       \item $\beta = -8$
+   \end{enumerate}
+\end{multicols}
+%7
+\item Let \( x = 2 \) be a root of the equation $x^2 + px + q = 0$ and 
+
+\begin{align*}
+f\brak{x} = 
+\begin{cases} 
+\frac{1 - \cos(x^2 - 4px + q^2 + 8q + 16)}{(x - 2p)^4} & , \quad x \neq 2p \\
+0 & , \quad x = 2p 
+\end{cases}
+\end{align*}
+Then  $\lim_{x \to 2p^+} \sbrak{f\brak{x}},$ where $\sbrak{.}$ denotes the greatest integer function, is\hfill(Jan 2023)
+\begin{multicols}{4}
+    \begin{enumerate}
+    \item 2 
+    \item 1
+    \item 0 
+    \item -1
+\end{enumerate}
+\end{multicols}
+
+%8
+\item 
+Let 
+$ f(x) = x + \frac{a}{\pi^2 - 4} \sin x + \frac{b}{\pi^2 - 4} \cos x, \quad x \in \mathbb{R} $ 
+be a function which satisfies 
+\begin{align*} 
+f(x) = x + \int_0^{\pi/2} \sin(x + y) f(y) \, dy.  
+\text{ Then }  \brak{a + b} \text{ is equal to: }
+\end{align*}\hfill(Jan 2023)
+\begin{multicols}{4}
+\begin{enumerate}
+   \item $-\pi(\pi + 2) $
+   \item $-2\pi(\pi + 2) $
+   \item $-2\pi(\pi - 2) $
+   \item $-\pi(\pi - 2) $
+\end{enumerate}
+\end{multicols}
+%9
+\item Let \quad $$A = \left\{ (x, y) \in \mathbb{R}^2 : y \geq 0, 2x \leq y \leq \sqrt{4 - (x-1)^2} \right\}$$ $$B = \cbrak{ (x, y) \in \mathbb{R} \times \mathbb{R} : 0 \leq y \leq \min \cbrak{ 2x, \sqrt{4 - (x-1)^2} }}$$
+
+$\text{Then the ratio of the area of A to the area of B is}$
+\hfill(Jan 2023)
+\begin{multicols}{2}
+   \begin{enumerate}
+       \item $ \frac{\pi - 1}{\pi + 1}$\\
+     \item $ \frac{\pi}{\pi - 1}$
+    \item $ \frac{\pi}{\pi + 1}$\\
+     \item $ \frac{\pi + 1}{\pi - 1}$
+   \end{enumerate}
+\end{multicols}
+
+% 10
+\item $\text{Let } \Delta \text{ be the area of the region}
+\cbrak{ (x, y) \in \mathbb{R}^2 : x^2 + y^2 \leq 21, y^2 \leq 4x, x \geq 1}. \text{Then } \frac{1}{2} \brak{\Delta - 21 \sin^{-1} \frac{2}{\sqrt{7}}}$ is equal to \hfill(Jan 2023)
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $2\sqrt{3} - \frac{1}{3}$\\
+    \item $\sqrt{3} - \frac{2}{3}$
+    \item $2\sqrt{3} - \frac{2}{3}$\\
+    \item $\sqrt{3} - \frac{4}{3}$
+\end{enumerate}
+\end{multicols}
+
+% 11
+\item A light ray emits from the origin at an angle of 30\degree  with the positive x-axis.After geting reflected by the line $x + y = 1$, then intersects the x-axis at Q. Then the abscissa of Q is \hfill(Jan 2023)
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\frac{2}{\brak{\sqrt{3} - 1}}$\\
+     \item $\frac{2}{\brak{3 + \sqrt{3}}}$
+     \item $\frac{2}{\brak{3 - \sqrt{3}}}$\\
+     \item $\frac{2}{2\brak{\sqrt{3} + 1}}$
+\end{enumerate}
+\end{multicols}
+% 12
+\item Let $B$ and $C$ be the two points on the line $y + x = 0$
+such that $B$ and $C$ are symmetric with respect to the origin. Suppose $A$ is a point on $y - 2x = 2$ such that $\triangle ABC$ is an equilateral triangle. Then, the area of the $\triangle ABC$ is\hfill(Jan 2023)
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $3\sqrt{3}$
+   \item $2\sqrt{3}$
+   \item $\frac{8}{\sqrt{3}}$
+   \item $\frac{10}{\sqrt{3}}$
+\end{enumerate}
+\end{multicols}
+% 13
+\item The tangents at points  $A\brak{4, -11}$ and $B\brak{8, -5}$ on the circle:$x^2 + y^2 - 3x + 10y - 15 = 0$ intersect at $C$. Find the radius of the circle with center $C$ and line joining A and B as its
+tangent, is equal to.\hfill(Jan 2023)
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $3\sqrt{3}$
+   \item $2\sqrt{3}$
+   \item $\frac{8}{\sqrt{3}}$
+   \item $\frac{10}{\sqrt{3}}$
+\end{enumerate}
+\end{multicols}
+% 14
+\item Let $\sbrak{x}$ denote the greatest integer $\leq x$. Consider the function $f(x) = \max \{x^2, 1 + \sbrak{x}\}$. Then the value of the integral $\int_0^2 f(x)\,dx$ is: \hfill (Jan 2023)
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\frac{5 + 4\sqrt{2}}{3}$\\
+    \item $\frac{8 + 4\sqrt{2}}{3}$
+    \item $\frac{1 + 5\sqrt{2}}{3}$\\
+    \item $\frac{4 + 5\sqrt{2}}{3}$\\
+\end{enumerate}
+\end{multicols}
+
+%15
+\item If the vectors $\overrightarrow{\vec{a}} = \lambda\vec{i} + \mu\vec{j} + 4\vec{k}$, $\overrightarrow{\vec{b}} = -2\vec{i} + 4\vec{j} -2\vec{k}$, and  $\overrightarrow{\vec{c}} = 2\mathbf{i} + 3\mathbf{j} + \mathbf{k}$ are coplanar, and the projection\\ of  on $\overrightarrow{\vec{a}}$ on $\overrightarrow{\vec{b}}$ is $\sqrt{54}$ units, then the sum of all possible values of $\lambda + \mu$ is equal to \hfill(Jan 2023)
+\begin{multicols}{4}
+    \begin{enumerate}
+    \item 6
+    \item 18
+    \item 0 
+    \item 24
+\end{enumerate}
+\end{multicols}
+\end{enumerate}
+
+
+\end{document}
+
