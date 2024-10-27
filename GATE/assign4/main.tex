@@ -1,0 +1,235 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multicol}
+\usetikzlibrary{patterns}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2013-CE}
+\author{EE24BTECH11020 -  Ellanti Rohith}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+
+
+
+\begin{enumerate}
+
+    \item Following statements are made on compacted soils, wherein DS stands for the soils compacted on dry side of optimum moisture content and WS stands for the soils compacted on wet side of optimum moisture content. Identify the \textit{incorrect} statement. 
+    \begin{enumerate}
+        \item Soil structure is flocculated on DS and dispersed on WS.
+        \item Construction pore water pressure is low on DS and high on WS.
+        \item On drying, shrinkage is high on DS and low on WS.
+        \item On access to water, swelling is high on DS and low on WS.\\
+    \end{enumerate}
+
+    
+      
+    \item Four columns of a building are to be located within a plot size of $10  \text{ m} \times 10  \text{ m}$. The expected load on each column is 4000 kN. Allowable bearing capacity of the soil deposit is 100 kN/m$^2$. The type of foundation best suited is
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item isolated footing
+        \item raft foundation
+        \item pile foundation
+        \item combined footing
+    \end{enumerate}
+    \end{multicols}
+
+    \item For subcritical flow in an open channel, the control section for gradually varied flow profiles is
+    
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item at the downstream end
+        \item at the upstream end
+        \item at both upstream and downstream ends
+        \item at any intermediate section
+    \end{enumerate}
+    \end{multicols}
+
+    \item Group-I contains dimensionless parameters and Group-II contains the ratios.
+    
+    \begin{center}
+    \begin{tabular}{p{6cm} p{9cm}}
+        \textbf{Group-I} & \textbf{Group-II} \\
+
+        P. Mach Number  & 1. Ratio of inertial force and gravitational force \\ 
+        Q. Reynolds Number  & 2. Ratio of fluid velocity and velocity of sound \\
+        R. Weber Number  & 3. Ratio of inertial force and viscous force \\ 
+        S. Froude Number  & 4. Ratio of inertial force and surface tension force 
+       
+    \end{tabular}
+\end{center}
+    The correct match of dimensionless parameters in Group-I with ratios in Group-II is:
+    
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item P-3, Q-2, R-4, S-1
+        \item P-3, Q-4, R-2, S-1
+        \item P-2, Q-3, R-4, S-1
+        \item P-1, Q-3, R-2, S-4
+    \end{enumerate}
+    \end{multicols}
+
+    \item For a two-dimensional flow field, the stream function $\psi$ is given as $\psi = \frac{3}{2}\brak{ y^2 - x^2}$. The magnitude of discharge occurring between the stream lines passing through points $\brak{0,3}$ and $\brak{3,4}$ is:
+    
+    \begin{multicols}{4}
+    \begin{enumerate}
+        \item 6
+        \item 3
+        \item 1.5
+        \item 2
+    \end{enumerate}
+    \end{multicols}
+
+    \item An isohyet is a line joining points of
+    
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item equal temperature
+        \item equal humidity
+        \item equal rainfall depth
+        \item equal evaporation
+    \end{enumerate}
+    \end{multicols}
+
+    \item Some of the water quality parameters are measured by titrating a water sample with a titrant. Group-I gives a list of parameters and Group-II gives the list of titrants.
+    
+    \begin{center}
+    \begin{tabular}{ p{4cm} p{4cm}}
+       
+        \textbf{Group-I} & \textbf{Group-II} \\
+       \\
+        P. Alkalinity & 1. N/35.5 AgNO$_3$ \\
+        Q. Hardness & 2. N/40 Na$_2$S$_2$O$_3$ \\
+        R. Chloride & 3. N/50 H$_2$SO$_4$ \\
+        S. Dissolved oxygen & 4. N/50 EDTA \\\\
+       
+    \end{tabular}
+    \end{center}
+
+    The correct match of water quality parameters in Group-I with titrants in Group-II is:
+    
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item P-1, Q-2, R-3, S-4
+        \item P-3, Q-4, R-1, S-2
+        \item P-2, Q-1, R-4, S-3
+        \item P-4, Q-3, R-2, S-1
+    \end{enumerate}
+    \end{multicols}
+
+    \item A water treatment plant is designed to treat 1 $m^3$/s of raw water. It has 14 sand filters. Surface area of each filter is 50 $m^2$. What is the loading rate (in $\dfrac{m^3}{day \cdot m^2}$) with two filters out of service for routine backwashing? \underline{\hspace{2cm}}
+\\
+    \item Select the strength parameter of concrete used in design of plain jointed cement concrete pavements from the following choices:
+
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item Tensile strength
+        \item Compressive strength
+        \item Flexural strength
+        \item Shear strength
+    \end{enumerate}
+    \end{multicols}
+
+    \item It was observed that 150 vehicles crossed a particular location of a highway in a duration of 30 minutes. Assuming that vehicle arrival follows a negative exponential distribution, find out the number of time headways greater than 5 seconds in the above observation? \underline{\hspace{2cm}}\\
+
+    \item For two major roads with divided carriageway crossing at right angle, a full clover leaf interchange with four indirect ramps is provided. Following statements are made on turning movements of vehicles to all directions from both roads. Identify the \textit{correct} statement:
+    
+   
+    \begin{enumerate}
+        \item Merging from left is possible, but diverging to left is not possible.
+        \item Both merging from left and diverging to left are possible.
+        \item Merging from left is not possible, but diverging to left is possible.
+        \item Neither merging from left nor diverging to left is possible.\\
+    \end{enumerate} 
+    \item The latitude and departure of a line AB are $+78$  $m$ and $-45.1$  $m$, respectively. The whole circle bearing of the line AB is:
+    
+    \begin{multicols}{2}
+    \begin{enumerate}
+        \item 30$\degree$
+        \item 150$\degree$
+        \item 210$\degree$
+        \item 330$\degree$
+    \end{enumerate}
+    \end{multicols}
+
+  
+
+\item The state of 2D-stress at a point is given by the following matrix of stresses:
+
+\begin{align*}
+    \begin{bmatrix}
+\sigma_{xx} & \sigma_{xy} \\
+\sigma_{xy} & \sigma_{yy}
+\end{bmatrix}
+=
+\begin{bmatrix}
+100 & 30 \\
+30 & 20
+\end{bmatrix} \text{ MPa}
+\end{align*}
+
+
+What is the magnitude of maximum shear stress in MPa?
+\begin{multicols}{4}
+\begin{enumerate}
+    \item 50
+    \item 75
+    \item 100
+    \item110
+\end{enumerate}
+\end{multicols}
+
+
+\end{enumerate}
+\end{document}
