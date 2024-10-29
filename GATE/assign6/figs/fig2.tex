@@ -1,0 +1,26 @@
+\begin{figure}[!ht]
+\centering
+\begin{circuitikz}[scale=0.85, transform shape] 
+\tikzstyle{every node}=[font=\normalsize]
+\draw [ line width=0.9pt](6.25,10.5) to[R] (6.25,8.5);
+\draw [ line width=0.9pt](6.25,8.5) to[short] (11.25,8.5);
+\draw [line width=0.9pt](10.5,6) to[Tnpn, transistors/scale=1.19] (10.5,8.5);
+\draw [ line width=0.9pt](9.75,7.25) to[R] (8,7.25);
+\draw [line width=0.9pt](10.5,6.25) to (10.5,6) node[ground]{};
+\draw [line width=0.9pt](6.25,6.25) to[Tnpn, transistors/scale=1.19] (6.25,8.75);
+\draw [ line width=0.9pt](5.5,7.5) to[R] (3.75,7.5);
+\draw [line width=0.9pt](6.25,6.75) to (6.25,6.5) node[ground]{};
+\draw [ line width=0.9pt](5.75,10.5) to[short] (6.75,10.5);
+\node [font=\normalsize] at (8.85,7.75) {1k$\Omega$};
+\node [font=\normalsize] at (7,9.75) {1K$\Omega$};
+\node [font=\normalsize] at (4.5,8) {1k$\Omega$};
+\node [font=\normalsize] at (6.5,10.75) {5 $V$};
+\node [font=\normalsize] at (3.5,7.75) {$V_1$};
+\node [font=\normalsize] at (10.5,8.75) {$V_{o}$};
+\node [font=\normalsize] at (7.75,7.5) {$V_2$};
+\node [font=\normalsize] at (6.25,7.5) {$Q_1$};
+\node [font=\normalsize] at (10.5,7.25) {$Q_2$};
+\end{circuitikz}
+
+\end{figure}
+

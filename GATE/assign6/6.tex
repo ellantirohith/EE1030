@@ -1,0 +1,250 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usepackage{amsmath}
+\usetikzlibrary{patterns}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2017-EE}
+\author{EE24BTECH11020 -  Ellanti Rohith}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+\item Consider the differential equation 
+\begin{align*}
+\brak{t^2 - 81} \frac{dy}{dt} + 5t \, y = \sin\brak{t} \quad \text{with } y\brak{1} = 2\pi.
+\end{align*}
+
+There exists a unique solution for this differential equation when $ t$  belongs to the interval
+
+\hfill{[GATE 2017]} \begin{enumerate}
+    \begin{multicols}{2}
+        \item $\brak{-2, 2}$
+        \item $\brak{-10, 10}$
+        \item $\brak{-10, 2}$
+        \item $\brak{0, 10}$
+    \end{multicols}
+\end{enumerate}
+\item Consider the line integral 
+\begin{align*}
+I = \int_C \brak{x^2 + iy} \, dz,
+\end{align*}
+where $ z = x + iy $. The line $ C $ is shown in the figure below.
+
+\begin{center}
+    \input{figs/fig8.tex}
+\end{center}
+
+The value of $ I $ is
+
+\hfill{[GATE 2017]} \begin{enumerate}
+    \begin{multicols}{2}
+        \item $\dfrac{1}{2} i$\\
+        \item  $\dfrac{2}{3} i$
+        \item $\dfrac{3}{4} i$\\
+        \item $\dfrac{4}{5} i$
+    \end{multicols}
+\end{enumerate}
+\item Two passive two-port networks are connected in cascade as shown in the figure. A voltage source is connected at port 1.
+
+\begin{center}
+  \input{figs/fig7.tex}
+\end{center}
+
+Given
+\begin{align*}
+    V_1 &= A_1 V_2 + B_1 I_2\\ I_1 &= C_1 V_2 + D_1 I_2\\
+    V_2 &= A_2 V_3 + B_2 I_3 \\ I_2 &= C_2 V_3 + D_2 I_3
+\end{align*}
+    
+
+
+
+where  $A_1, B_1, C_1, D_1, A_2, B_2, C_2$ and $ D_2$ are the generalized circuit constants. If the Thevenin equivalent circuit at port 3 consists of a voltage source  $V_T$ and an impedance $ Z_T$, connected in series, then
+
+\hfill{[GATE 2017]} \begin{enumerate}
+    \begin{multicols}{2}
+        \item  $V_T = \dfrac{V_1}{A_1 + A_2}, \quad Z_T = \dfrac{A_1 B_2 + B_1 D_2}{A_1 A_2}$\\
+        \item  $V_T = \dfrac{V_1}{A_1 A_2 + B_1 C_2}, \quad Z_T = \dfrac{A_1 B_2 + B_1 D_2}{A_1 A_2 + B_1 C_2} $
+        \item$ V_T = \dfrac{V_1}{A_1 + A_2}, \quad Z_T = \dfrac{A_1 A_2 + B_1 C_2}{A_1 A_2 + B_1 D_2}$\\
+        \item $ V_T = \dfrac{V_1}{A_1 A_2 + B_1 C_2}, \quad Z_T = \dfrac{A_1 A_2 + B_1 C_2}{A_1 A_2 + B_1 C_2}$
+    \end{multicols}
+\end{enumerate}
+
+\item Let a causal LTI system be characterized by the following differential equation, with initial rest condition
+\begin{align*}
+   \frac{d^2 y}{dt^2} + 7 \frac{dy}{dt} + 10 y\brak{t} = 4x\brak{t} + 5 \frac{dx\brak{t}}{dt} 
+\end{align*}
+
+where $x\brak{t}$ and  $y\brak{t}$ are the input and output respectively. The impulse response of the system is $ u\brak{t}$ is the unit step function
+
+\hfill{[GATE 2017]} \begin{enumerate}
+    \begin{multicols}{2}
+        \item  $2e^{-2t} u\brak{t} - 7e^{-5t} u\brak{t} $
+        \item  $-2e^{-2t} u\brak{t} + 7e^{-5t} u\brak{t} $
+        \item $ 7e^{-2t} u\brak{t} - 2e^{-5t} u\brak{t} $
+        \item $-7e^{-2t} u\brak{t} + 2e^{-5t} u\brak{t} $
+    \end{multicols}
+\end{enumerate}
+\item Let the signal
+\begin{align*}
+  x\brak{t} = \sum_{k=-\infty}^{+\infty} \brak{-1}^k \delta \brak{ t - \frac{k}{2000} }
+\end{align*}
+
+be passed through an LTI system with frequency response $H\brak{\omega}$, as given in the figure below.
+\input{figs/fig6.tex}
+
+
+The Fourier series representation of the output is given as\\
+
+\hfill{[GATE 2017]} \begin{enumerate}
+ 
+        \item $ 4000 + 4000 \cos\brak{2000 \pi t} + 4000 \cos\brak{4000 \pi t} $   \item$ 2000 + 2000 \cos\brak{2000 \pi t} + 2000 \cos\brak{4000 \pi t}$
+        \item $ 2000 \cos\brak{2000 \pi t} $
+       \item $ 4000 \cos\brak{2000 \pi t}$\\
+    
+\end{enumerate}
+
+\item In the system whose signal flow graph is shown in the figure,$ U_1\brak{s}$ and  $U_2\brak{s}$ are inputs. The transfer function $\dfrac{Y\brak{s}}{U_1\brak{s}}$  is
+\hfill{[GATE 2017]} 
+\input{figs/fig5.tex}
+\begin{enumerate}
+    \begin{multicols}{2}
+        \item $\dfrac{k_1}{JL s^2 + JR s + k_1 k_2}$
+        \item  $\dfrac{k_1}{JL s^2 - JR s - k_1 k_2}$
+        \item  $\dfrac{k_1 - U_2 \brak{R + sL}}{JL s^2 + \brak{JR - U_2 L} s + k_1 k_2 - U_2 R}$
+        \item  $\dfrac{k_1 - U_2 \brak{sL - R}}{JL s^2 - \brak{JR + U_2 L} s - k_1 k_2 + U_2 R}$
+    \end{multicols}
+\end{enumerate}
+\item The transfer function of the system is given by:
+
+\begin{align*}
+x\brak{t} &= \myvec{ 1 & 2 \\ 2 & 0} + \myvec {1 \\ 2 } u\brak{t}  \\
+y\brak{t} &= \myvec{ 1 & 0} x\brak{t}
+\end{align*}
+The options for the transfer function are:\hfill{[GATE 2017]} 
+\begin{multicols}{2}
+\begin{enumerate}
+    \item $\dfrac{\brak{s + 2}}{s^2 - 2s - 2}$\\
+    \item  $\dfrac{\brak{s - 2}}{s^2 + s - 4}$
+    \item  $\dfrac{\brak{s + 4}}{s^2 + s - 4}$\\
+    \item  $\dfrac{\brak{s + 4}}{s^2 - s - 4}$
+\end{enumerate}     
+\end{multicols}
+
+\item The load shown in the figure is supplied by a 400 $V$ (line-to-line), 3-phase source RYB sequence. The load is balanced and inductive, drawing 3464 $VA$. When the switch $S$ is in position $ N $, the three wattmeters $W_1 $,  $W_2$, and $ W_3 $ read 577.35 $W$ each. If the switch is moved to position $Y$, the readings of the wattmeters in watts will be:
+\hfill{[GATE 2017]} 
+
+\input{figs/fig4.tex}
+\item The approximate transfer characteristic for the circuit shown below with an ideal operational amplifier and diode is as follows:
+
+\input{figs/fig3.tex}\hfill{[GATE 2017]}
+\begin{multicols}{2}
+     \begin{enumerate}
+    \item \input{figs/op1.tex} 
+     \item \input{figs/op2.tex}  \item \input{figs/op3.tex}  \item \input{figs/op4.tex}
+\end{enumerate}
+\end{multicols}
+
+   
+
+    
+
+\item The output expression for the Karnaugh map shown below is
+\input{tables/table1.tex}
+
+\hfill{[GATE 2017]}
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $ \overline{B} \overline{D} + BCD $
+    \item $ \overline{B} D + AB $
+    \item $ \overline{B} D + ABC $
+    \item $ B \overline{D} + ABC $
+\end{enumerate}
+\end{multicols}
+\item A load is supplied by a 230 $V$, 50 $Hz$ source. The active power $ P $ and the reactive power $ Q $ consumed by the load are such that $1 \text{ kW} \leq P \leq 2 \text{ kW}$ and $ 1 \text{ kVAR} \leq Q \leq 2 \text{ kVAR}$. A capacitor connected across the load for power factor correction generates 1 $kVAR$ reactive power. The worst case power factor after power factor correction is
+\hfill{[GATE 2017]} 
+\begin{multicols}{4}
+ \begin{enumerate}
+    \item 0.447 lag
+    \item 0.707 lag
+    \item 0.894 lag
+    \item 1
+\end{enumerate}
+\end{multicols}
+
+\item The logical gate implemented using the circuit shown below where $ V_1$ and $ V_2 $ are inputs with (0 $V$ as digital 0 and 5 $V$ as digital 1) and $ V_{\text{OUT}} $ is the output, is \\ \newpage
+\input{figs/fig2.tex}
+\hfill{[GATE 2017]}
+\item The input voltage $V_{DC}$ of the buck-boost converter shown below varies from 32 $V$ to 72 $V$. Assume that all components are ideal, inductor current is continuous, and output voltage is ripple-free. The range of duty ratio $D$ of the converter for which the magnitude of the steady-state output voltage remains constant at 48 $V$ is
+\hfill{[GATE 2017]}
+\input{figs/fig1.tex}
+\begin{multicols}{4}
+\begin{enumerate}
+    \item $ \dfrac{2}{5} \leq D \leq \dfrac{3}{5} $
+    \item $ \dfrac{2}{3} \leq D \leq \dfrac{3}{4} $
+    \item $ 0 \leq D \leq 1 $
+    \item $ \dfrac{1}{3} \leq D \leq \dfrac{2}{3} $
+\end{enumerate}
+
+\end{multicols}
+
+
+
+
+\end{enumerate}
+
+
+\end{document}

@@ -1,0 +1,28 @@
+\begin{figure}[!ht]
+\centering
+\begin{circuitikz}[scale=0.7]
+
+\draw [ line width=0.8pt](4.5,12) to[american voltage source] (4.5,8);
+\draw [ line width=0.9pt](4.5,8) to[short] (10.75,8);
+\draw [line width=0.9pt](7,12) to[L ] (7,8);
+\draw [ line width=0.9pt](4.5,12) to[short] (5.5,12);
+\draw [line width=0.9pt, ->, >=Stealth] (5.5,12) -- (6,12.75);
+\draw [ line width=0.9pt](6,12) to[short] (7,12);
+\draw [ line width=0.9pt](10.5,12) to[D] (6.25,12);
+\draw [line width=0.9pt](10,12) to[C] (10,8);
+\draw [ line width=0.9pt](12.5,12) to[R] (12.5,8);
+\draw [ line width=0.9pt](10.5,12) to[short] (12.5,12);
+\draw [ line width=0.9pt](12.5,8) to[short] (10.5,8);
+\node at (3.2,10) {$V_{DC}$};
+\node at (5.3,12.5) {$S_1$};
+\node at (6.3,10) {$L$};
+\node at (8.85,10) {$C$};
+\node at (11.6,10) {$R$};
+\node at (13.2,10) {$V_{o}$};
+\node at (13.2,9) {$+$};
+\node at (13.2,10.75) {$-$};
+
+\end{circuitikz}
+
+
+\end{figure}

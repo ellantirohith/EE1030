@@ -1,0 +1,80 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.6\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw [line width=1.1pt, short] (16.5,-2.25) .. controls (18,-3.25) and (15.5,-3.25) .. (17,-2.25);
+\draw [line width=0.9pt, short] (17,-2.25) .. controls (21.5,-2.25) and (21.75,-2.25) .. (26.25,-2.25);
+\draw [line width=1.3pt, short] (16.5,-2.25) -- (11.25,-2.25);
+\draw [line width=1.2pt, short] (21.75,-2.25) -- (23.75,-2.25);
+\draw [line width=1.1pt, short] (16.5,2.75) .. controls (18,1.75) and (15.5,1.75) .. (17,2.75);
+\draw [line width=0.9pt, short] (17,2.75) .. controls (21.5,2.75) and (21.75,2.75) .. (26.25,2.75);
+\draw [line width=1.3pt, short] (16.5,2.75) -- (11.25,2.75);
+\draw [line width=1.2pt, short] (21.75,2.75) -- (23.75,2.75);
+\draw [line width=1.1pt, short] (16.5,-7.25) .. controls (18,-8.25) and (15.5,-8.25) .. (17,-7.25);
+\draw [line width=0.9pt, short] (17,-7.25) .. controls (21.5,-7.25) and (21.75,-7.25) .. (26.25,-7.25);
+\draw [line width=1.3pt, short] (16.5,-7.25) -- (11.25,-7.25);
+\draw [line width=1.2pt, short] (21.75,-7.25) -- (23.75,-7.25);
+\draw [ line width=0.5pt ] (7.5,5.25) rectangle (11.25,-12.25);
+\draw [ line width=0.5pt ] (26.25,5.25) rectangle (30,-12.25);
+\draw [ line width=0.5pt , dashed] (15,4) rectangle  (19.75,0.25);
+\draw [ line width=1.1pt](15.5,2.75) to[short] (15.5,1.5);
+\draw [line width=1pt](15.5,1.5) to[L ] (18.5,1.5);
+\draw [ line width=1pt](18.5,1.5) to[R] (18.5,-0.25);
+\draw [ line width=1pt](18.5,-0.25) to[short] (22,-0.25);
+\draw [line width=1pt, short] (22.25,-2) .. controls (23,-1.75) and (23,-2.5) .. (22.25,-2.5);
+\draw [ line width=1pt](22.25,-2) to[short] (22.25,-0.25);
+\draw [ line width=1pt](22.25,-0.25) to[short] (21.75,-0.25);
+\draw [ line width=1pt](22.25,-2.5) to[short] (22.25,-7);
+\draw [line width=1pt, short] (22.25,-7) .. controls (23,-6.75) and (23,-7.5) .. (22.25,-7.5);
+\draw [line width=1.1pt, short] (16.5,-2.25) .. controls (18,-3.25) and (15.5,-3.25) .. (17,-2.25);
+\draw [line width=0.9pt, short] (17,-2.25) .. controls (21.5,-2.25) and (21.75,-2.25) .. (26.25,-2.25);
+\draw [line width=1.3pt, short] (16.5,-2.25) -- (11.25,-2.25);
+\draw [ line width=0.5pt , dashed] (15,-1) rectangle  (19.75,-4.75);
+\draw [ line width=1.1pt](15.5,-2.25) to[short] (15.5,-3.5);
+\draw [line width=1pt](15.5,-3.5) to[L ] (18.5,-3.5);
+\draw [ line width=1pt](18.5,-3.5) to[R] (18.5,-5.25);
+\draw [line width=1.1pt, short] (16.5,-7.25) .. controls (18,-8.25) and (15.5,-8.25) .. (17,-7.25);
+\draw [line width=0.9pt, short] (17,-7.25) .. controls (21.5,-7.25) and (21.75,-7.25) .. (26.25,-7.25);
+\draw [line width=1.3pt, short] (16.5,-7.25) -- (11.25,-7.25);
+\draw [ line width=0.5pt , dashed] (15,-6) rectangle  (19.75,-9.75);
+\draw [ line width=1.1pt](15.5,-7.25) to[short] (15.5,-8.5);
+\draw [line width=1pt](15.5,-8.5) to[L ] (18.5,-8.5);
+\draw [ line width=1pt](18.5,-8.5) to[R] (18.5,-10.25);
+\draw [line width=1pt, short] (18.5,-5.25) -- (22.25,-5.25);
+\draw [line width=1pt, short] (18.5,-10.25) -- (22.25,-10.25);
+\draw [line width=1pt, short] (22.25,-7.5) -- (22.25,-10.25);
+\draw [ line width=1pt](11.25,-11) to[short] (24.75,-11);
+\draw [ line width=1pt](24.75,-9.75) to[short] (24.75,-11);
+\draw [ line width=1pt](24.75,-9.75) to[short, -o] (23.75,-9.75) ;
+\draw [ line width=1pt](22.25,-9.25) to[short, -o] (23,-9.25) ;
+\draw [ line width=1pt](23,-9.25) to[short, -o] (23.75,-8.5) ;
+\draw [ line width=1pt](23.75,-8.5) to[short] (25,-8.5);
+\draw [ line width=1pt](25,-6.75) to[short] (25,-2.25);
+\draw [line width=1pt, short] (25,-7) .. controls (25.75,-6.75) and (25.75,-7.5) .. (25,-7.5);
+\draw [ line width=1pt](25,-8.5) to[short] (25,-7.75);
+\draw [ line width=1pt](25,-7.5) to[short] (25,-8);
+\draw [ line width=1pt](25,-7) to[short] (25,-5.5);
+\node [font=\LARGE, rotate around={90:(0,0)}] at (9,-5) {400V, 3-Phase Source};
+\node [font=\LARGE, rotate around={90:(0,0)}] at (27.75,-3.5) {Load};
+\node [font=\LARGE] at (10.5,2.75) {R};
+\node [font=\LARGE] at (10.5,-2) {Y};
+\node [font=\LARGE] at (11,-6.5) {B};
+\node [font=\LARGE] at (10.75,-10.75) {N};
+\node [font=\LARGE] at (14,4.25) {$W_1$};
+\node [font=\LARGE] at (13.75,-0.75) {$W_2$};
+\node [font=\LARGE] at (13.75,-5.5) {$W_3$};
+\node [font=\LARGE] at (22.75,-9.75) {$S$};
+\node [font=\LARGE] at (24,-8) {$Y$};
+\node [font=\LARGE] at (23.75,-9.5) {$N$};
+\draw [ line width=1pt , dashed] (22.5,-8) rectangle  (24.25,-10.25);
+\node at (15.5,-7.25) [circ] {};
+\node at (22.25,-5.25) [circ] {};
+\node at (22.25,-9.25) [circ] {};
+\node at (25,-2.25) [circ] {};
+\node at (15.5,-2.25) [circ] {};
+\node at (15.5,2.75) [circ] {};
+\end{circuitikz}
+}%
+
+\end{figure}
