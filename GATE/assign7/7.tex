@@ -1,0 +1,189 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usetikzlibrary{patterns}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2019-AE}
+\author{EE24BTECH11020 -  Ellanti Rohith}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+
+    \item The dimensions of kinematic viscosity of a fluid (where $L$ is length, $T$ is time) are
+    \hfill{[GATE 2019]}
+    \begin{multicols}{4}
+        \begin{enumerate}
+            \item $LT^{-1}$
+            \item $L^2T^{-1}$
+            \item $LT^{-2}$
+            \item $L^2T$
+        \end{enumerate}
+    \end{multicols}
+
+    \item $\phi\brak{x, y}$ represents the velocity potential of a two-dimensional flow with velocity field $\vec{V} = u\brak{x, y} \hat{i} + v\brak{x, y} \hat{j}$, where $\hat{i}$ and $\hat{j}$ are unit vectors along the $x$ and $y$ axes, respectively. Which of the following is necessarily true?
+    \hfill{[GATE 2019]}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item $\nabla^2 \phi = 0$
+            \item $\nabla \times \vec{V} = 0$
+            \item $\nabla \cdot \vec{V} = 0$
+            \item $u = -\dfrac{\partial \phi}{\partial y}, \, v = \dfrac{\partial \phi}{\partial x}$
+        \end{enumerate}
+    \end{multicols}
+
+    \item For a quasi-one-dimensional isentropic supersonic flow through a diverging duct, which of the following is true in the direction of the flow?
+    \hfill{[GATE 2019]}
+
+        \begin{enumerate}
+            \item Both the Mach number and the static temperature increase.
+            \item The Mach number increases and the static temperature decreases.
+            \item The Mach number decreases and the static temperature increases.
+            \item Both the Mach number and the static temperature decrease.\\
+        \end{enumerate}
+        
+    \item For a NACA2415 airfoil of chord length $c$, which of the following is true?
+    \hfill{[GATE 2019]}
+
+        \begin{enumerate}
+            \item Maximum camber is located at $0.2c$ from the leading edge.
+            \item Maximum thickness is located at $0.15c$ from the leading edge.
+            \item Maximum camber is $0.02c$.
+            \item Maximum thickness is $0.05c$.\\
+        \end{enumerate}
+
+\item When a propeller airplane in ground-roll during take-off experiences headwind, which of the following statements is FALSE?
+    \hfill{[GATE 2019]}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item The drag on the airplane increases.
+            \item The thrust from the propellers decreases.
+            \item The wing lift increases.
+            \item The ground-roll distance increases.
+        \end{enumerate}
+    \end{multicols}
+
+    \item Which of the following graphs represents the response of a dynamically unstable airplane?
+    \hfill{[GATE 2019]}
+    \begin{multicols}{2}
+        \begin{enumerate}
+        \item \input{figs/op1.tex}
+        \item \input{figs/op2.tex}
+        \item \input{figs/op3.tex}
+        \item \input{figs/op4.tex}
+        \end{enumerate}
+    \end{multicols}
+
+\item The propulsive efficiency of a ramjet engine is lower than that of a low bypass turbofan engine operating under the same conditions and producing the same thrust, primarily because the ramjet engine
+    \hfill{[GATE 2019]}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item has larger kinetic energy lost in the exhaust jet.
+            \item has lower thrust power.
+            \item is not self-starting.
+            \item has higher thrust to weight ratio.
+        \end{enumerate}
+    \end{multicols}
+
+\item While flying at Mach 2.0, 11  $km$   altitude and producing the same thrust, what is the correct order from the lowest thrust specific fuel consumption $\brak{tsfc}$ to the highest $ tsfc $ ?
+    \hfill{[GATE 2019]}
+    \begin{multicols}{2}
+        \begin{enumerate}
+            \item Turbofan, Ramjet, Turbojet
+            \item Turbofan, Turbojet, Ramjet
+            \item Ramjet, Turbojet, Turbofan
+            \item Turbojet, Turbofan, Ramjet
+        \end{enumerate}
+    \end{multicols}
+
+    \item For a single stage subsonic compressor, which of the following statements about the highest possible compressor pressure ratio (CPR) is correct?
+    \hfill{[GATE 2019]}
+   
+        \begin{enumerate}
+            \item CPR of an axial compressor $>$ CPR of centrifugal compressor.
+            \item CPR of an axial compressor $<$ CPR of centrifugal compressor.
+            \item CPR of an axial compressor = CPR of centrifugal compressor.
+            \item CPR of any value can be attained with either an axial or a centrifugal compressor.
+        \end{enumerate}
+ 
+
+    \item For a beam subjected to a transverse shear load through its shear center,
+    \hfill{[GATE 2019]}
+    
+        \begin{enumerate}
+            \item the twist per unit length is zero.
+            \item the shear stress is uniform throughout the cross-section.
+            \item the bending stresses in the cross section are zero.
+            \item the shear strain is zero at the shear center.
+        \end{enumerate}
+    
+
+
+  \item A function $f\brak{x}$ is defined by $f\brak{x} = \dfrac{1}{2}\brak{x + |x|}$. The value of \begin{align*}
+      \int_{-1}^{1} f\brak{x} \, dx
+  \end{align*} is \underline{\hspace{2cm} } (round off to 1 decimal place). \hfill{[GATE 2019]}
+
+    \item The value of the following limit is \underline{\hspace{2cm}}(round off to 2 decimal places).
+    
+    \begin{align*}
+    \lim_{\theta \to 0} \dfrac{\theta - \sin \theta}{\theta^3}
+    \end{align*}
+    \hfill{[GATE 2019]}
+    
+    \item To simulate the aerodynamic forces on a cylinder of 1 $m$diameter due to a uniform air flow of 1 $m/s$ at standard temperature and pressure (STP), low-speed wind tunnel experiments at STP are conducted on a 0.1 $m$ diameter cylinder. The free stream air speed in the wind tunnel experiments should be \underline{\hspace{2cm}} $m/s$ (round off to the nearest integer).
+    \hfill{[GATE 2019]}
+\end{enumerate}
+
+
+\end{document}
