@@ -1,0 +1,23 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.4\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+% Fill the rectangle with gray color
+\fill[gray!20] (5,10.5) rectangle (10,9.25); 
+
+\draw  (5,10.5) rectangle (10,9.25);
+\draw [dashed] (7.5,8) -- (7.5,11.75);
+\draw [dashed] (6.25,8) -- (8.75,11.75);
+\draw [->, >=Stealth] (10,9.75) -- (11,9.75);
+\draw [->, >=Stealth] (5,9.75) -- (4,9.75);
+\node [font=\normalsize] at (7.5,12) {$x$};
+\node [font=\normalsize] at (7.5,7.75) {$x$};
+\node [font=\normalsize] at (9,12) {$y$};
+\node [font=\normalsize] at (6,7.75) {$y$};
+\draw [short] (7.5,10.8) .. controls (7.5,10.75) and (8,11) .. (8,10.5);
+\node [font=\small] at (7.8,11) {$45\degree$};
+\end{circuitikz}
+}%
+\end{figure}

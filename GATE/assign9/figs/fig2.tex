@@ -1,0 +1,45 @@
+\begin{center}
+    \resizebox{0.45\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+
+\draw [short] (3.9,10.75) .. controls (6.25,11) and (6,9.5) .. (7.4,10.5);
+\draw (3.15,10.75) to[short] (3.15,11.25);
+\draw (2.65,11.25) to[short] (3.15,11.25);
+\draw (2.65,8.5) to[short] (3.15,8.5);
+\draw (3.15,9) to[short] (3.15,8.5);
+\draw [short] (3.9,9) .. controls (6,8.5) and (6.25,10) .. (7.4,9.25);
+\draw (3.15,10.75) to[short] (3.9,10.75);
+\draw (3.15,9) to[short] (3.9,9);
+\draw [short] (7.4,10.5) -- (8.15,10.75);
+\draw [short] (7.4,9.25) -- (8.15,9);
+\node [font=\normalsize] at (2.9,10) {$P_o$};
+\node [font=\normalsize] at (2.9,9.5) {$T_o$};
+\node [font=\normalsize] at (4.15,10) {FLOW};
+\draw [->, >=Stealth] (3.4,9.75) -- (5.15,9.75);
+\node [font=\normalsize] at (6.65,8.75) {NOZZLE-B};
+\draw [dashed] (8.15,10.75) -- (11.25,11);
+\draw [dashed] (8.15,9) -- (11.25,8.75);
+
+\draw (8.15,9) to[short] (9.15,9.87) to[short](11.25,11);
+
+\draw (8.15,9) to[short] (9.2,9.77);
+\draw(9.2,9.77) to[short](11.29,10.89);
+\draw (8.15,9) to[short] (9.3,9.67);
+\draw(9.3,9.67) to[short](11.79,10.95);
+
+\draw (8.15,10.75) to[short] (9.15,9.87) to[short](11.25,8.75);
+
+\draw (8.15,10.75) to[short] (9.15,10);
+\draw(9.15,10) to[short](11.4,9);
+\draw (8.15,10.75) to[short] (9.25,10.12);
+\draw(9.25,10.12) to[short](11.65,9.25);
+\draw [->, >=Stealth] (8.5,8) -- (8.5,9);
+\draw [->, >=Stealth] (9.75,11.75) -- (8.75,10.5);
+\node [font=\normalsize] at (9.9,12) {EXPANSION FAN};
+
+\node [font=\normalsize] at (8.4,7.5) {NOZZLE EXIT};
+\end{circuitikz}
+}%
+\end{center}
+

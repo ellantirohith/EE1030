@@ -1,0 +1,205 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usetikzlibrary{patterns}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2021-AE}
+\author{EE24BTECH11020 -  Ellanti Rohith}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+  \item The figure shows schematics of wave patterns at the exit of nozzles A and B operating at different pressure ratios.
+
+\input{figs/fig1.tex}
+\input{figs/fig2.tex}
+
+Nozzles A and B, respectively, are said to be operating in: 
+ \hfill{[GATE 2021]}\begin{enumerate}
+    
+        \item over-expanded mode and under-expanded mode
+        \item under-expanded mode and perfectly expanded mode
+        \item perfectly expanded mode and under-expanded mode
+        \item under-expanded mode and over-expanded mode\\
+   
+\end{enumerate}
+\item The combustion process in a turbo-shaft engine during ideal operation is: \hfill{[GATE 2021]}\begin{enumerate} 
+    
+     \begin{multicols}{4}
+        \item isentropic
+        \item isobaric
+        \item isochoric
+        \item isothermal
+    \end{multicols}
+\end{enumerate} 
+\item How does the specific thrust of a turbojet engine change for a given flight speed with an increase in flight altitude?
+
+\hfill{[GATE 2021]}\begin{enumerate}\begin{multicols}{2}
+        \item Increases monotonically
+        \item Decreases monotonically
+        \item Remains constant
+        \item First increases and then decreases
+    \end{multicols}
+\end{enumerate}
+
+\vspace{1cm}
+
+\item How does the propulsion efficiency of a turbofan engine, operating at a given Mach number and a given altitude, change with an increase in compressor pressure ratio?
+\hfill{[GATE 2021]}\begin{enumerate} 
+     \begin{multicols}{2}
+        \item Remains constant
+        \item Increases monotonically
+        \item Decreases monotonically
+        \item First decreases and then increases
+    \end{multicols}
+\end{enumerate}
+
+\vspace{1cm}
+
+\item A solid propellant rocket producing 25 $MN$ thrust is fired for 150 seconds. The specific impulse of the rocket is 2980 $Ns$/ $Kg$. How much propellant is burned during the rocket operation?
+\hfill{[GATE 2021]}\begin{enumerate} 
+     \begin{multicols}{4}
+        \item 8390  $Kg$
+        \item 82300  $Kg$
+        \item \(1.26 \times 10^6\)  $Kg$
+        \item \(11.2 \times 10^6\)  $Kg$
+    \end{multicols}
+\end{enumerate}
+\item The shape of a supersonic diffuser that slows down a supersonic flow to subsonic flow is
+
+ \hfill{[GATE 2021]}\begin{multicols}{2}\begin{enumerate}
+ \item converging
+    \item diverging
+ \item diverging - converging
+   
+   
+    \item converging -  diverging
+\end{enumerate}
+\end{multicols}
+
+\item Uniaxial tension test (see the figure) is conducted on two different samples prepared with homogeneous, isotropic materials. One of the materials is brittle, whereas the other is ductile.
+\input{figs/fig3.tex}
+
+
+
+
+Assuming that there is no stress concentration at loading points, the failure would initiate:
+ \hfill{[GATE 2021]}\begin{enumerate}
+    \item along x-x in both materials
+    \item along x-x in brittle material and along y-y in ductile material
+    \item along y-y in brittle material and along x-x in ductile material
+    \item along y-y in both materials
+\end{enumerate}
+
+\item For the state of stress as shown in the figure, what is the orientation of the plane with maximum shear stress with respect to the $x$-axis?
+
+
+
+\input{figs/fig4.tex}
+ \hfill{[GATE 2021]}\begin{multicols}{4}\begin{enumerate}
+    \item $45^\circ$
+    \item $-45^\circ$
+    \item $22.5^\circ$
+    \item $-22.5^\circ$
+\end{enumerate}
+\end{multicols}
+\bigskip
+
+\item Let $V_{\text{TAS}}$ be the true airspeed of an aircraft flying at a certain altitude where the density of air is $\rho$, and $V_{\text{EAS}}$ be the equivalent airspeed. If $\rho_0$ is the density of air at sea level, what is the ratio $ \dfrac{V_{\text{TAS}}}{V_{\text{EAS}}}$ equal to?
+ \hfill{[GATE 2021]}\begin{multicols}{4}\begin{enumerate}
+    \item $ \dfrac{\rho}{\rho_0}$
+    \item $ \dfrac{\rho_0}{\rho}$
+    \item $\sqrt{ \dfrac{\rho_0}{\rho}}$
+    \item $\sqrt{ \dfrac{\rho}{\rho_0}}$
+\end{enumerate}
+\end{multicols}
+\item $C_{m}$ - $\alpha$ variation for a certain aircraft is shown in the figure. Which one of the following statments is true for this aircraft?
+ \hfill{[GATE 2021]}
+ \input{figs/fig6.tex}
+ \begin{enumerate}
+\item The aircraft can trim at a positive $\alpha$ and it is stable. 
+\item The aircraft can trim at a positive $\alpha$, but it is unstable.
+
+\item The aircraft can trim at a negative $\alpha$ and it is stable.
+
+\item The aircraft can trim at a negative $\alpha$, but it is unstable.
+\end{enumerate}
+\item Which of the following statement(s) is/are true across an oblique shock (in adiabatic conditions) over a wedge as shown below?
+
+\input{figs/fig5.tex}
+ \hfill{[GATE 2021]}\begin{enumerate}
+    \item Total pressure decreases
+    \item Mach number based on velocity tangential to the shock decreases
+    \item Total temperature remains constant
+    \item Mach number based on velocity tangential to the shock remains the same and that based on velocity normal to the shock decreases
+\end{enumerate}
+
+\bigskip
+
+\item Which of the following statement(s) is/are true with regards to Kutta condition for flow past airfoils?
+
+ \hfill{[GATE 2021]}\begin{enumerate}
+    \item It is utilized to determine the circulation on an airfoil.
+    \item It is applicable only to airfoils with sharp trailing edges.
+    \item The trailing edge of an airfoil is a stagnation point.
+    \item The flow leaves the trailing edge smoothly.
+\end{enumerate}
+\item According to the airfoil theory, which of the following statment(s) is are true for a cambered airfoil?\hfill{[GATE 2021]}\begin{enumerate}
+\item The lift coefficient for an airfoil is directly proportional to the absolute angle of attack. 
+\item The aerodynamic centre lies at quarter chord point.
+\item The centre of pressure lies at quarter chord point.
+\item Drag coefficient is proportional to the square of lift coefficient.
+\end{enumerate}
+\end{enumerate}
+\end{document}

@@ -1,0 +1,29 @@
+\begin{center}
+
+\resizebox{0.35\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\LARGE]
+\draw (3.75,8) to[short] (7.5,11.75);
+\draw (4,8) to[short] (7.5,11.5);
+\draw (3.75,8) to[short] (7.5,4.25);
+\draw (4,8) to[short] (7.5,4.5);
+\draw (4,8) to[short] (7.5,4.5);
+  
+
+   
+    \draw (8.75, 9.5) to[short] (8.75, 6.5);
+    \draw (3.75, 8) to[short] (8.75, 9.5);
+    \draw (3.75, 8) to[short] (8.75, 6.5);
+    
+    \fill[gray] (8.75, 9.5) -- (3.75, 8) -- (8.75, 6.5) -- cycle;
+    
+\draw [->, >=Stealth] (1.25,8) -- (2.5,8);
+\node [font=\LARGE] at (1.75,7.32) {$M>1$};
+\node [font=\normalsize, text =white]  at (7.8,8) {WEDGE  };
+\node [font=\normalsize, rotate around={47:(0,0)}] at (6.5,11.25) {OBLIQUE};
+\node [font=\normalsize, rotate around={47:(0,0)}] at (7.5,10.85) {SHOCK};
+\end{circuitikz}
+}%
+
+
+\end{center}
