@@ -1,0 +1,233 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usetikzlibrary{patterns}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2021-MA}
+\author{EE24BTECH11020 -  Ellanti Rohith}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\section*{General Aptitude (GA)}
+
+
+
+
+\begin{enumerate}
+    \item The ratio of boys to girls in a class is 7 to 3.\\
+    Among the options below, an acceptable value for the total number of students in the class is:
+
+    \hfill{[GATE 2021]}\begin{multicols}{4}
+    \begin{enumerate}
+        \item 21
+        \item 37
+        \item 50
+        \item 73
+    \end{enumerate}
+    \end{multicols}
+
+    \item A polygon is convex if, for every pair of points, $ P $ and $ Q $ belonging to the polygon, the line segment $ PQ $ lies completely inside or on the polygon.\\
+    Which one of the following is \textbf{NOT} a convex polygon?\hfill{[GATE 2021]}
+\input{figs/fig1.tex}
+    \item Consider the following sentences \\
+\begin{enumerate}[label={}]
+\item (i)Everyone in  the class is prepared for the exam.
+\item (ii)Babu invited Danish to his home because he loves playing chess.
+\hfill{[GATE 2021]}\\
+\end{enumerate}
+
+\begin{enumerate}
+\item (i) is grammaticaly correct and (ii) is unambigious
+\item (i) is grammaticaly incorrect and (ii) is unambigious
+\item (i) is grammaticaly correct and (ii) is ambigious
+\item (i) is grammaticaly incorrect and (ii) is unambigious
+\end{enumerate}
+\item A circular sheet of paper is folded along the lines in the directions shown. The paper, after being punched in the final folded state as shown and unfolded in the reverse order of folding, will look like 
+\input{figs/fig5.tex}
+\hfill{[GATE 2021]}\begin{multicols}{2}
+\begin{enumerate}
+    \item  \input{figs/fig6.tex}
+      \item \input{figs/fig7.tex}
+      \item \input{figs/fig8.tex}
+     \item \input{figs/fig9.tex}
+\end{enumerate}
+\end{multicols}
+
+
+
+     \item \underline{\hspace{1.5cm}} is to \textit{surgery} as \textit{writer} is to \underline{\hspace{1.5cm}}\\
+     Which one of following options maintains a similar logical relation in above sentence?
+     \hfill{[GATE 2021]}\begin{multicols}{2}
+     \begin{enumerate}
+     \item Plan, outline
+     \item Hospital, library
+     \item Doctor, book
+     \item Medicine, grammar
+     \end{enumerate}
+     \end{multicols}
+\item We have 2 rectangular sheets of paper, $ M $ and $ N $, of dimensions $ 6  \text{ cm} \times 1  \text{ cm} $ each. Sheet $ M $ is rolled to form an open cylinder by bringing the short edges of the sheet together. Sheet $ N $ is cut into equal square patches and assembled to form the largest possible closed cube. Assuming the ends of the cylinder are closed, the ratio of the volume of the cylinder to that of the cube is
+
+\hfill{[GATE 2021]}
+\begin{enumerate}
+\begin{multicols}{4}
+    \item $ \dfrac{\pi}{2} $
+    \item $ \dfrac{3}{\pi} $
+    \item $ \dfrac{9}{\pi} $
+    \item $ 3\pi $
+\end{multicols}
+\end{enumerate}
+\item Details of prices of two items $ P $ and $ Q $ are presented in the below table. The ratio of cost of item $ P $ to cost of item $ Q $ is 3:4. Discount is calculated as the difference between the marked price and the selling price. The profit percentage is calculated as the ratio of the difference between selling price and cost, to the cost 
+\begin{align*}
+\text{Profit \%} = \brak{\dfrac{\text{Selling Price} - \text{Cost}}{\text{Cost}}} \times 100.
+\end{align*}
+The discount on item $ Q $, as a percentage of its marked price, is \\
+
+\input{tables/tab1.tex}
+
+\hfill{[GATE 2021]}
+\begin{enumerate}
+\begin{multicols}{4}
+    \item 25
+    \item 12.5
+    \item 10
+    \item 5
+\end{multicols}
+\end{enumerate}
+
+\item There are five bags each containing identical sets of ten distinct chocolates. One chocolate is picked from each bag. The probability that at least two chocolates are identical is \underline{\hspace{1.5cm}}
+
+\hfill{[GATE 2021]}
+\begin{enumerate}
+\begin{multicols}{4}
+    \item 0.3024\item 0.4235 \item 0.6976\item 0.8125
+\end{multicols}
+\end{enumerate}     
+    \item  Given below are two statements 1 and 2, and two conclusions I and II.
+
+\begin{enumerate}[label={}]
+    \item Statement 1: All bacteria are microorganisms.\item Statement 2: All pathogens are microorganisms.    \item Conclusion I: Some pathogens are bacteria.    \item Conclusion II: All pathogens are not bacteria.
+\end{enumerate}
+
+Based on the above statements and conclusions, which one of the following options is logically CORRECT?
+
+\hfill{[GATE 2021]}\begin{multicols}{2}
+    \begin{enumerate}
+        \item Only conclusion I is correct
+        \item Only conclusion II is correct
+        \item Either conclusion I or II is correct
+        \item Neither conclusion I nor II is correct
+    \end{enumerate}
+\end{multicols}
+
+\item Some people suggest anti-obesity measures (AOM) such as displaying calorie information in restaurant menus. Such measures sidestep addressing the core problems that cause obesity: poverty and income inequality.
+
+Which one of the following statements summarizes the passage?
+
+
+\hfill{[GATE 2021]}
+    \begin{enumerate}
+        \item The proposed AOM addresses the core problems that cause obesity.
+        \item If obesity reduces, poverty will naturally reduce, since obesity causes poverty.  \item AOM are addressing the core problems and are likely to succeed.
+        \item AOM are addressing the problem superficially.
+    \end{enumerate}
+\section*{Mathematics(MA)}
+\item  Let $ A $ be a $ 3 \times 4 $ matrix and $ B $ be a $ 4 \times 3 $ matrix with real entries such that $ AB $ is non-singular. Consider the following statements:
+
+\begin{enumerate}
+    \item[P:] Nullity of $ A $ is 0.
+    \item[Q:] $ BA $ is a non-singular matrix.
+\end{enumerate}
+
+ Then
+
+\hfill{[GATE 2021]}\begin{multicols}{2}
+    \begin{enumerate}
+        \item both P and Q are TRUE
+        \item P is TRUE and Q is FALSE
+        \item P is FALSE and Q is TRUE
+        \item both P and Q are FALSE
+    \end{enumerate}
+\end{multicols}  
+\item Let $ f\brak{z} = u\brak{x,y} + i  v\brak{x,y} $ for $ z = x + i y \in \mathbb{C} $, where $ x $ and $ y $ are real numbers, be a non-constant analytic function on the complex plane $ \mathbb{C} $. Let $ u_x, u_y $ and $ v_x, v_y $ denote the first order partial derivatives of $ u\brak{x,y} = \operatorname{Re}(f\brak{z}) $ and $ v\brak{x,y} = \operatorname{Im}(f\brak{z}) $ with respect to real variables $ x $ and $ y $, respectively. Consider the following two functions defined on $ \mathbb{C} $:
+\begin{align*}
+       g_1\brak{z} = u_x\brak{x,y} - i u_y\brak{x,y} \text{ for} \quad z = x + iy \in \mathbb{C},
+\end{align*}
+\begin{align*}g_2\brak{z} = v_x\brak{x,y} + i v_y\brak{x,y}   
+\text{ for} \quad z = x + iy \in \mathbb{C}.
+\end{align*}
+Then
+
+\hfill{[GATE 2021]}
+
+    \begin{enumerate}
+        \item both $ g_1\brak{z} $ and $ g_2\brak{z} $ are analytic in $ \mathbb{C} $
+        \item $ g_1\brak{z} $ is analytic in $ \mathbb{C} $ and $ g_2\brak{z} $ is NOT analytic in $ \mathbb{C} $
+        \item $ g_1\brak{z} $ is NOT analytic in $ \mathbb{C} $ and $ g_2\brak{z} $ is analytic in $ \mathbb{C} $\item neither $ g_1\brak{z} $ nor $ g_2\brak{z} $ is analytic in $ \mathbb{C} $
+    \end{enumerate}
+
+
+
+\item 
+Let $ T\brak{z} = \dfrac{az + b}{cz   + d},$   $ad - bc \neq 0 $, be the Mobius transformation which maps the points $ z_1 = 0   $, $ z_2 = -i $, $ z_3 = \infty $ in the $ z  $-plane onto the points $   w_1 =   10 $, $ w_2 =5 - 5i $, $ w_3 =5 + 5i $ in the $ w   $-plane, respectively. Then the image of the set $ S   = \cbrak{  z \in \mathbb{C} : Re\brak{z} < 0 } $ under the map $ w   = T\brak{z} $ is
+
+\hfill{[GATE 2021]}\begin{multicols}{2}
+    \begin{enumerate}
+        \item $ \cbrak{  w \in \mathbb{C} : |w| < 5 } $
+        \item $ \cbrak{w\in \mathbb{C} : |w| > 5 } $\item $ \cbrak{w \in \mathbb{C} : |w - 5| < 5 } $\item $ \cbrak{ w \in \mathbb{C} : |w - 5| > 5 } $
+    \end{enumerate}
+\end{multicols}
+
+\end{enumerate}
+
+\end{document}
