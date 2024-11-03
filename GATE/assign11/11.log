@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.13)  3 NOV 2024 14:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.8.13)  3 NOV 2024 22:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1430,7 +1430,7 @@ File: ts1txr.fd 2000/12/15 v3.1
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 35.
 )
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-
-dist/fonts/enc/dvips/base/8r.enc}] [2] [3] (./11.aux)
+dist/fonts/enc/dvips/base/8r.enc}] (./tables/table1.tex) [2] [3] (./11.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1439,10 +1439,10 @@ Package rerunfilecheck Info: File `11.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 47000 strings out of 474222
- 1098019 string characters out of 5748733
+ 47007 strings out of 474222
+ 1098144 string characters out of 5748733
  1948975 words of memory out of 5000000
- 68463 multiletter control sequences out of 15000+600000
+ 68466 multiletter control sequences out of 15000+600000
  626450 words of font info for 182 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,13n,103p,1172b,972s stack positions out of 10000i,1000n,20000p,200000b,200000s
