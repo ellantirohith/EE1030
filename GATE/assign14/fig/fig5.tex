@@ -1,0 +1,19 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [->, >=Stealth] (1.25,9.25) -- (5,9.25);
+\draw [->, >=Stealth] (1.25,9.25) -- (1.25,13.25);
+\draw [->, >=Stealth] (1.25,9.25) .. controls (1.75,10) and (1.75,10.5) .. (2.5,11) ;
+\draw [short] (2.5,11) .. controls (6,14) and (3,10.75) .. (2.75,10.5);
+\draw [->, >=Stealth] (3,10.75) -- (2.75,10.5);
+\draw [short] (2.75,10.5) .. controls (2.25,9.75) and (2.25,9.75) .. (2,9.25);
+\node [font=\normalsize, rotate around={90:(0,0)}] at (0.75,11.25) {Stress};
+\node [font=\normalsize] at (3.25,9) {Strain};
+\node [font=\normalsize] at (3.75,10.25) {Unloading};
+\node [font=\normalsize] at (2.5,11.75) {Loading};
+\end{circuitikz}
+}%
+
+\end{figure}

@@ -1,0 +1,208 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{circuitikz}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2023 AE}
+\author{EE24BTECH11020  -  Ellanti Rohith}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+
+
+
+
+
+\begin{enumerate}
+
+
+\item Consider the free vibration responses P, Q, R, and S (shown in the figure) of a single degree of freedom spring-mass-damper system with the same initial conditions. For the different damping cases listed below, which one of the following options is correct?
+\begin{enumerate}
+            \item[1.] Overdamped
+            \item[2.] Underdamped
+            \item [3.]Critically damped     
+            \item[4.] Undamped
+        \end{enumerate}
+\input{fig/fig1.tex}
+        \hfill{[GATE 2024]}\begin{enumerate}    \begin{multicols}{2}
+
+            \item P - 1, Q - 4, R - 2, S - 3
+            \item P - 1, Q - 2, R - 4, S - 3
+            \item P - 3, Q - 4, R - 2, S - 1
+            \item P - 3, Q - 2, R - 4, S - 1
+        \end{multicols}
+   \end{enumerate}
+ 
+    \item For a single degree of freedom spring-mass-damper system subjected to harmonic forcing, the part of the motion (response) that decays due to damping is known as:
+
+        \hfill{[GATE 2024]}\begin{enumerate}    \begin{multicols}{2}
+            \item Transient response
+            \item Steady-state response
+            \item Harmonic response
+            \item Non-transient response
+      \end{multicols}  \end{enumerate}
+    
+
+    \item For an ideal gas, the specific heat at constant pressure is 1147 J/kg K and the ratio of specific heats is equal to 1.33. What is the value of the gas constant for this gas in J/kg K?
+   
+        \hfill{[GATE 2024]}\begin{enumerate} \begin{multicols}{4}
+            \item 284.6
+            \item 1005
+            \item 862.4
+            \item 8314
+       \end{multicols}
+ \end{enumerate}
+    
+    \item A surrogate liquid hydrocarbon fuel, approximated as C$_{10}$H$_{12}$, is being burned in a land-based gas turbine combustor with dry air (79\% N$_2$ and 21\% O$_2$ by volume). How many moles of dry air are required for the stoichiometric combustion of the surrogate fuel with dry air at atmospheric temperature and pressure?
+   
+        \hfill{[GATE 2024]}\begin{enumerate} \begin{multicols}{4}
+            \item 61.9
+            \item 30.95
+            \item 13
+            \item 10
+     \end{multicols}   \end{enumerate}
+    
+
+    \item In the figure shown below, various thermodynamics processes for an ideal gas are represented. Match each curve with the process that it best represents.
+    \input{fig/fig2}
+   
+        \hfill{[GATE 2024]}\begin{enumerate}
+            \item aa' - Isentropic; bb' - Isothermal; cc' - Isobaric; dd' - Isochoric
+            \item aa' - Isothermal; bb' - Isentropic; cc' - Isochoric; dd' - Isobaric
+            \item aa' - Isothermal; bb' - Isentropic; cc' - Isobaric; dd' - Isochoric
+            \item aa' - Isothermal; bb' - Isobaric; cc' - Isentropic; dd' - Isochoric
+        \end{enumerate}
+   
+
+    \item In an airbreathing gas turbine engine, the combustor inlet temperature is 600 K. The heating value of the fuel is 43.4  $\times$ 10$^6$ J/kg. Assume Cp to be 1100 J/kg K for air and burned gases, and fuel-air ratio $f \ll 1.0$. Neglect kinetic energy at the inlet and exit of the combustor and assume 100\% burner efficiency. What is the fuel-air ratio required to achieve 1300 K temperature at the combustor exit?
+   
+        \hfill{[GATE 2024]}\begin{enumerate} \begin{multicols}{4}
+            \item 0.0177
+            \item 0.0215
+            \item 0.0127
+            \item 0.0277
+     \end{multicols}   \end{enumerate}
+    
+
+    \item Which one of the following figures represents the drag polar of a general aviation aircraft?
+   
+        \hfill{[GATE 2024]}\begin{enumerate} \begin{multicols}{2}
+            \item \input{fig/op1}
+            \item \input{fig/op2}
+            \item \input{fig/op3}  
+            \item \input{fig/op4}
+      \end{multicols}  \end{enumerate}
+    
+
+    \item In the context of steady, inviscid, incompressible flows, consider the superposition of a uniform flow with speed $ U $ along the positive x-axis (from left to right), and a source of strength $ \Lambda $ located at the origin. Which one of the following statements is NOT true regarding the location of the stagnation point of the resulting flow?
+    
+        \hfill{[GATE 2024]}\begin{enumerate}
+            \item It is located to the left of the origin
+            \item It moves closer to the origin for increasing $ \Lambda $, while $ U $ is held constant
+            \item It moves closer to the origin for increasing $ U $, while $ \Lambda $ is held constant
+            \item It is located along the x-axis
+        \end{enumerate}
+    
+
+    \item On Day 1, an aircraft flies with a speed of $ V_1 $ m/s at an altitude where the temperature is $ T_1 $ K. On Day 2, the same aircraft flies with a speed of $ \sqrt{1.2} V_1 $ m/s at an altitude where the temperature is $ 1.2 T_1 $ K. How does the Mach number $ M_2 $ on Day 2 compare with the Mach number $ M_1 $ on Day 1?
+    Assume ideal gas behavior for air. Also assume the ratio of specific heats and molecular weight of air to be the same on both the days.
+   
+        \hfill{[GATE 2024]}\begin{enumerate} \begin{multicols}{2}
+            \item $ M_2 = 0.6 M_1 $
+            \item $ M_2 = M_1 $
+            \item $ M_2 = \dfrac{M_1}{\sqrt{1.2}} $
+            \item $ M_2 = \sqrt{1.2} M_1 $
+       \end{multicols}  \end{enumerate}
+   
+
+    \item Consider a steady, isentropic, supersonic flow (Mach number $ M > 1 $) entering a Convergent-Divergent (CD) duct as shown in the figure. Which one of the following options correctly describes the flow at the throat?
+    \input{fig/fig3}
+   
+        \hfill{[GATE 2024]}\begin{enumerate} \begin{multicols}{2}
+            \item Can only be supersonic
+            \item Can only be sonic
+            \item Can either be sonic or supersonic
+            \item Can only be subsonic
+       \end{multicols} \end{enumerate}
+    
+
+    \item Consider steady, incompressible, inviscid flow past two airfoils shown in the figure. The coefficient of pressure at the trailing edge of the airfoil with finite angle, shown in figure (I), is $ C_{P_I} $ while that at the trailing edge of the airfoil with cusp, shown in figure (II), is $ C_{P_{II}} $. Which one of the following options is TRUE? \input{fig/fig4}
+    
+        \hfill{[GATE 2024]}\begin{enumerate}\begin{multicols}{2}
+            \item $ C_{P_I} < 1 $,   $ C_{P_{II}} < 1 $
+            \item $ C_{P_I} = 1 $,   $ C_{P_{II}} = 1 $
+            \item $ C_{P_I} = 1 $,   $ C_{P_{II}} < 1 $
+            \item $ C_{P_I} < 1 $,   $ C_{P_{II}} = 1 $
+     \end{multicols}   \end{enumerate}
+    
+\item Which of the following options is/are correct?
+    
+        \hfill{[GATE 2024]}\begin{enumerate}
+            \item The stress-strain graph for a nonlinear elastic material is \input{fig/fig5}
+            \item Material properties are independent of position in a homogeneous material
+            \item An isotropic material has infinitely many planes of material symmetry
+            \item The stress-strain graph for a linear elastic material is\input{fig/fig6}
+            \end{enumerate}
+         
+\item Which of the following statements is/are correct about a satellite moving in a
+geostationary orbit?
+          \hfill{[GATE 2024]}\begin{enumerate}
+              \item The orbit lies in the equatorial plane
+\item The orbit is circular about the center of the Earth
+\item The time period of motion is 90 minutes
+\item The satellite is visible from all parts of the Earth
+          \end{enumerate}
+\end{enumerate}
+
+
+\end{document}
+

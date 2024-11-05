@@ -1,0 +1,25 @@
+\begin{figure}[!ht]
+\centering
+\resizebox{0.35\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\normalsize]
+\draw [line width=0.9pt, ->, >=Stealth] (3.75,7) -- (8.5,7);
+\draw [line width=0.9pt, ->, >=Stealth] (3.75,7) -- (3.75,11.75);
+\draw [line width=0.9pt, dashed] (6.25,11.25) -- (6.25,7.5);
+\draw [line width=0.9pt, dashed] (4.5,9.25) -- (8.25,9.25);
+\draw [line width=0.9pt, dashed] (4.5,8.25) .. controls (6.5,9.25) and (6.5,9.25) .. (7.75,11.5);
+\draw [line width=0.9pt, short] (5,8) .. controls (5.5,8.25) and (6.75,9.25) .. (6.75,11.25);
+\node [font=\normalsize, rotate around={90:(0,0)}] at (3.25,9.5) {Temperature};
+\node [font=\normalsize] at (6,6.5) {Entropy};
+\node [font=\normalsize] at (4.25,9.25) {a};
+\node [font=\normalsize] at (8.5,9.25) {a'};
+\node [font=\normalsize] at (6.25,11.5) {b};
+\node [font=\normalsize] at (6.25,7.25) {b'};
+\node [font=\normalsize] at (4.25,8.25) {c};
+\node [font=\normalsize] at (8,11.75) {c'};
+\node [font=\normalsize] at (4.75,7.75) {d};
+\node [font=\normalsize] at (6.75,11.75) {d'};
+\end{circuitikz}
+}%
+
+\end{figure}
