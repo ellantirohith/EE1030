@@ -1,0 +1,19 @@
+\frametitle{Python Code for Plotting}
+\begin{lstlisting}[language=Python]
+plt.plot([v1.x, v2.x, v3.x, v1.x], [v1.y, v2.y, v3.y, v1.y], 'o--', color='darkblue', linewidth=2)
+plt.fill([v1.x, v2.x, v3.x], [v1.y, v2.y, v3.y], color='lightcoral', alpha=0.3)
+
+plt.text(v1.x + 0.15, v1.y + 0.1, 'A', fontsize=18, color='darkred')
+plt.text(v2.x - 0.2, v2.y - 0.15, 'B', fontsize=18, color='darkred')
+plt.text(v3.x + 0.1, v3.y - 0.1, 'C', fontsize=18, color='darkred')
+
+plt.xlabel("X")
+plt.ylabel("Y")
+plt.title("Triangle ABC")
+plt.grid(True)
+plt.axis("equal")
+plt.xlim(-1, 7)
+plt.ylim(-1, 2)
+plt.tight_layout()
+plt.show()
+\end{lstlisting}
