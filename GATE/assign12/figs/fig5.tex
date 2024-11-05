@@ -1,0 +1,24 @@
+\begin{center}
+\resizebox{0.6\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\draw (2.5,13) to[short] (2.5,6);
+\draw (2.5,6) to[short] (11.25,6);
+\draw (11.25,13) to[short] (11.25,6);
+\draw [color={rgb,255:red,0; green,128; blue,0}](2.5,6.5) to[short] (11.25,6.5);
+\draw [ color={rgb,255:red,255; green,0; blue,0}, dashed] (3,12.75) .. controls (3,9.25) and (5.5,7) .. (11.25,10.5);
+\draw [color={rgb,255:red,0; green,0; blue,255}, dashed] (3,12.75) .. controls (3.5,6) and (5.25,7.75) .. (11.5,7);
+\draw [ color={rgb,255:red,128; green,0; blue,128}, dashdotted] (2.5,6) -- (11.25,9.75);
+\node [font=\large, rotate around={90:(0,0)}] at (2.1,9.5) {$Cost\text{ } per\text{ } unit \rightarrow$};
+\node [font=\large] at (7.75,5.5) {$Order\text{ } quantity \rightarrow$};
+\node [font=\normalsize, color={rgb,255:red,255; green,0; blue,0}] at (9.25,10.75) {$Curve \, P1$};
+\node [font=\normalsize, color={rgb,255:red,128; green,0; blue,128}] at (10.5,8.5) {$Curve \, P2$};
+\node [font=\normalsize, color={rgb,255:red,0; green,0; blue,255}] at (8.75,8) {$Curve \, P3$};
+\node [font=\normalsize, color={rgb,255:red,0; green,128; blue,0}] at (5.75,7) {$Curve \, P4$};
+\draw [->, >=Stealth] (6.5,7) -- (7.75,6.5);
+\draw [->, >=Stealth] (9,7.75) -- (9.5,7.25);
+\draw [->, >=Stealth] (9.25,10.5) -- (9.5,9.75);
+\draw [->, >=Stealth] (10.5,8.75) -- (10,9.25);
+\end{circuitikz}
+}%
+\end{center}

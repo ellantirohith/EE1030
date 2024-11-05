@@ -1,0 +1,254 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{amsmath}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage{circuitikz}
+\usepackage{amsmath}
+\usetikzlibrary{patterns}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2023-ME}
+\author{EE24BTECH11020 -  Ellanti Rohith}
+\maketitle
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+
+\begin{enumerate}
+\item He did not manage to fix the car himself, so he \underline{\hspace{2cm}} in the garage.
+    
+    \hfill{[GATE 2023]}\begin{enumerate}
+    \begin{multicols}{2}
+        \item got it fixed
+        \item getting it fixed
+        \item gets fixed
+        \item got fixed
+        \end{multicols}
+    \end{enumerate}
+
+     \item Planting : Seed :: Raising : \underline{\hspace{2cm}} \\
+    (By word meaning)
+
+    \hfill{[GATE 2023]}\begin{enumerate}
+    \begin{multicols}{2}
+        \item Child
+        \item Temperature
+        \item Height
+        \item Lift
+        \end{multicols}
+    \end{enumerate}
+
+
+\item A certain country has 504 universities and 25951 colleges. These are categorized into Grades I, II, and III as shown in the given pie charts.\\ What is the percentage, correct to one decimal place, of higher education institutions (colleges and universities) that fall into Grade III?
+
+\input{figs/fig1.tex}
+
+
+\hfill{[GATE 2023]}\begin{enumerate}
+
+\begin{multicols}{4}
+   \item 22.7
+   \item 23.7
+   \item 15.0
+   \item 66.8
+
+    \end{multicols}
+\end{enumerate}
+\item The minute-hand and second-hand of a clock cross each other \underline{\hspace{1.5cm}} times between 09:15:00 AM and 09:45:00 AM on a day.
+
+
+\hfill{[GATE 2023]}\begin{enumerate}
+\begin{multicols}{4}
+    \item 30
+    \item 15
+    \item 29
+    \item 31
+    \end{multicols}
+\end{enumerate}
+
+\item The symbols $ \circ $, $ \ast $, $ \triangle $, and $ \square $ are to be filled, one in each box, as shown below.
+
+The rules for filling in the four symbols are as follows.
+
+\begin{enumerate}
+    \item Every row and every column must contain each of the four symbols.
+    \item Every $2 \times 2$ square delineated by bold lines must contain each of the four symbols.
+\end{enumerate}
+
+ Which symbol will occupy the box marked with ? in the partially filled figure?
+\input{figs/fig2.tex}
+
+\hfill{[GATE 2023]}\begin{enumerate}
+
+\begin{multicols}{2}
+    \item $ \circ $
+    \item $ \ast $
+    \item $ \triangle $
+    \item $ \square $
+    \end{multicols}
+\end{enumerate}
+
+\item In a recently held parent-teacher meeting, the teachers had very few complaints about Ravi. After all, Ravi was a hardworking and kind student. Incidentally, almost all of Ravi's friends at school were hardworking and kind too. But the teachers drew attention to Ravi's complete lack of interest in sports. The teachers believed that, along with some of his friends who showed similar disinterest in sports, Ravi needed to engage in some sports for his overall development.
+
+Based only on the information provided above, which one of the following statements can be logically inferred with \textbf{certainty}?
+
+\hfill{[GATE 2023]}\begin{enumerate}
+    \item All of Ravi's friends are hardworking and kind.
+    \item No one who is not a friend of Ravi is hardworking and kind.
+    \item None of Ravi's friends are interested in sports.
+    \item Some of Ravi's friends are hardworking and kind.
+\end{enumerate}
+ \item Consider the following inequalities
+\begin{align*}
+    p^2 - 4q &< 4 \\
+    3p + 2q &< 6
+\end{align*}
+where $ p $ and $ q $ are positive integers.\\
+The value of $ \brak{p + q} $ is \underline{\hspace{2cm}}.
+
+\vspace{1em}
+
+\hfill{[GATE 2023]}\begin{enumerate}\begin{multicols}{4}
+    \item 2
+    \item 1
+    \item 3
+    \item 4
+    \end{multicols}
+\end{enumerate}
+\item Which one of the sentence sequences in the given options creates a coherent narrative?
+
+\begin{enumerate}
+    \item[(i)] I could not bring myself to knock.
+    \item[(ii)] There was a murmur of unfamiliar voices coming from the big drawing room and the door was firmly shut.
+    \item[(iii)] The passage was dark for a bit, but then it suddenly opened into a bright kitchen.
+    \item[(iv)] I decided I would rather wander down the passage.
+\end{enumerate}
+
+\vspace{1em}
+
+
+\hfill{[GATE 2023]}\begin{enumerate}
+\begin{multicols}{2}
+   \item (iv), (i), (iii), (ii)
+   \item (iii), (i), (ii), (iv)
+   \item (ii), (i), (iv), (iii)
+   \item (i), (iii), (ii), (iv)
+    \end{multicols}
+\end{enumerate}
+\item How many pairs of sets (S, T) are possible among the subsets of $ \{1, 2, 3, 4, 5, 6\} $ that satisfy the condition that $ S $ is a subset of $ T $?
+\hfill{[GATE 2023]}
+\begin{multicols}{2}
+\begin{enumerate}
+   \item 729
+   \item 728
+   \item 665
+   \item 664
+\end{enumerate}
+\end{multicols}
+
+\item An opaque pyramid (shown below), with a square base and isosceles faces, is suspended in the path of a parallel beam of light, such that its shadow is cast on a screen oriented perpendicular to the direction of the light beam. The pyramid can be reoriented in any direction within the light beam. Under these conditions, which one of the shadows \textbf{P, Q, R}, and \textbf{S} is \textbf{NOT} possible?
+\input{figs/fig3.tex}
+\begin{enumerate}
+\begin{multicols}{2}
+
+\item\input{figs/op1.tex}
+
+\item\input{figs/op3.tex}
+\item\input{figs/op4.tex}
+\item\input{figs/op2.tex}
+
+
+\end{multicols}
+\end{enumerate}
+\hfill{[GATE 2023]}\begin{enumerate}
+\begin{multicols}{2}
+   \item \textbf{P}
+   \item \textbf{Q}
+   \item \textbf{R}
+   \item \textbf{S}
+    \end{multicols}
+\end{enumerate}
+\item A machine produces a defective component with a probability of 0.015. The number of defective components in a packed box containing 200 components produced by the machine follows a Poisson distribution. The mean and the variance of the distribution are
+
+\hfill{[GATE 2023]}\begin{enumerate}
+\begin{multicols}{2}
+   \item 3 and 3, respectively
+   \item $ \sqrt{3} $ and $ \sqrt{3} $, respectively
+   \item 0.015 and 0.015, respectively
+   \item 3 and 9, respectively
+    \end{multicols}
+\end{enumerate}
+
+\item The figure shows the plot of a function over the interval $\sbrak{-4, 4}$. Which one of the options given \textbf{CORRECTLY} identifies the function?\\
+\input{figs/fig4.tex}
+
+
+\hfill{[GATE 2023]}\begin{enumerate}
+    \begin{multicols}{2}
+       \item $ |2 - x| $
+       \item $ |2 - |x|| $
+       \item $ |2 + |x|| $
+       \item $ 2 - |x| $
+    \end{multicols}
+\end{enumerate}
+\item With reference to the Economic Order Quantity (EOQ) model, which one of the options given is correct?\\ 
+\input{figs/fig5.tex}
+
+
+
+\hfill{[GATE 2023]}\begin{enumerate}
+   \item Curve P1: Total cost, Curve P2: Holding cost, Curve P3: Setup cost, and Curve P4: Production cost.
+   \item Curve P1: Holding cost, Curve P2: Setup cost, Curve P3: Production cost, and Curve P4: Total cost.
+   \item Curve P1: Production cost, Curve P2: Holding cost, Curve P3: Total cost, and Curve P4: Setup cost.
+   \item Curve P1: Total cost, Curve P2: Production cost, Curve P3: Holding cost, and Curve P4: Setup cost.
+\end{enumerate}
+
+\end{enumerate}
+\end{document}

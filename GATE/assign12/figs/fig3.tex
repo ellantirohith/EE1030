@@ -1,0 +1,19 @@
+\begin{center}
+\resizebox{0.3\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\large]
+\fill[lightgray] (6.25,8.75) -- (7.75,10.25) -- (6.25,11.75) --(4.5,10) --cycle;
+\draw [black, line width=1.2pt](6.25,11.75) to[short] (6.25,8.75);
+\draw [black, line width=1.2pt](6.25,11.75) to[short] (7.75,10.25);
+\draw [black, line width=1.2pt](6.25,8.75) to[short] (7.75,10.25);
+\draw [black, line width=1.2pt](6.25,11.75) to[short] (4.5,10);
+\draw [black, line width=1.2pt](4.5,10) to[short] (6.25,8.75);
+\draw [black, line width=1.2pt, dashed] (4.5,10) -- (6.55,10.3);
+\draw [black, line width=1.2pt, dashed] (6.25,11.75) -- (6.55,10.3);
+\draw [black, line width=1.2pt, dashed] (6.55,10.3) -- (7.75,10.25);
+
+
+
+\end{circuitikz}
+}%
+\end{center}

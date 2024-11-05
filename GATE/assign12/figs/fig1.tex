@@ -1,0 +1,32 @@
+\begin{center}
+    \begin{tikzpicture}[scale=2]  
+        \begin{scope}
+        \draw[thick] (0,0) circle (1.5cm);         
+            \fill[purple!60] (0,0) -- (0:1.5) arc[start angle=0, end angle=223.2, radius=1.5] -- cycle;
+            \node at (1.59,0.75) {\textbf{62\%}};
+             \node at (1.62,-0.5) {\textbf{7\%}};
+            \node at (0,1) {GRADE II};         
+            \fill[gray!60] (0,0) -- (223.2:1.5) arc[start angle=223.2, end angle=334.8, radius=1.5] -- cycle;
+            \node at (0,-1.69) {\textbf{31\%}};
+            \node at (0,-0.8) {GRADE I};
+\fill[white] (0,0) -- (334.8:1.5) arc[start angle=334.8, end angle=360, radius=1.5] -- cycle;
+\node[rotate=-12] at (0.95,-0.2) {GRADE III};
+            \node[below] at (0, -1.8) {\textbf{Universities}};
+        \end{scope}
+\begin{scope}[xshift=5cm]         
+\draw[thick] (0,0) circle (1.5cm);    
+            \fill[purple!60] (0,0) -- (0:1.5) arc[start angle=0, end angle=244.8, radius=1.5] -- cycle;
+          \fill[white] (0,0) -- (244.8:1.5) arc[start angle=244.8, end angle=332.4, radius=1.5] -- cycle;
+          \fill[gray!60] (0,0) -- (332.4:1.5) arc[start angle=332.4, end angle=360, radius=1.5] -- cycle;
+           \node at (1.62,-0.5) {\textbf{9\%}}; 
+\node at (0,-1.69) {\textbf{23\%}};
+\node at (1.59,0.75) {\textbf{68\%}};
+            \node at (0.2,-0.8) {GRADE III};
+             \node at (0.2,0.8) {GRADE II};
+\node[rotate=-12] at (0.95,-0.2) {GRADE I};
+
+            \node[below] at (0, -1.8) {\textbf{Colleges}};
+        \end{scope}
+
+    \end{tikzpicture}
+\end{center}
