@@ -1,0 +1,17 @@
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}%
+\contentsline {section}{\numberline {2}Methodology}{2}{section.2}%
+\contentsline {section}{\numberline {3}Explanation of Algorithm}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}QR Decomposition}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2} QR Factorization}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Computational Complexity of the QR Algorithm with Householder Transformations}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1} Matrix Multiplication}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2} Householder Transformation}{4}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Conjugate Transpose}{4}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Iterative QR Algorithm}{4}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Advantages of QR Algorithm}{5}{section.5}%
+\contentsline {section}{\numberline {6}Comparison with other Algorithms}{5}{section.6}%
+\contentsline {section}{\numberline {7}Description of the Program}{6}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Matrix Operations}{6}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}QR Decomposition Using Householder Reflections}{6}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Iterative Eigenvalue Computation}{6}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Program Features}{6}{subsection.7.4}%

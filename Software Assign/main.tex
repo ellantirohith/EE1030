@@ -1,0 +1,241 @@
+
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+
+% Customization of section titles
+\titleformat{\section}{\bfseries\Large}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries\normalsize}{\thesubsection}{1em}{}
+
+% Title Page
+\title{\textbf{Report}}
+\author{Ellanti Rohith-EE24BTECH11020}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report is about my work on process of selecting an appropriate algorithm for eigenvalue computation, and explaining about it. The study includes a comparison of various methods and advantages of the Algorithm and overview of it's implmentation. 
+\end{abstract}
+\tableofcontents
+\newpage
+
+
+\section{Introduction}
+After analysing a few algorithms to calculate eigen values. The QR Algorithm is  selected  due to its robustness and versatility. Algorithms like  Rayleigh Quotient Iteration, Power Iteration were analyzed to understand their pros and cons. 
+
+The algorithms explored during this study include:
+\begin{enumerate}
+    \item Power Iteration
+    \item Inverse Iteration
+    \item Rayleigh Quotient Iteration
+      \item QR Algorithm 
+\end{enumerate}
+
+\section{Methodology}
+To select an appropriate algorithm, several methodologies were explored:
+\begin{enumerate}[label=\arabic*.]
+    \item Understanding eigenvalue computation algorithms through theoretical analysis.
+    \item Comparing algorithms such as Rayleigh Quotient Iteration and the QR Algorithm based on factors like  robustness, and computational cost.
+    \item Selecting the QR Algorithm for its ability to handle both real and complex eigenvalues.
+\end{enumerate}
+
+
+   
+
+\section{Explanation of Algorithm}
+\subsection{QR Decomposition}
+The QR algorithm is an iterative method to compute the eigenvalues of a square matrix  $A$. The idea is to  factorize $ A $ into an orthogonal matrix $Q$ and an upper triangular matrix $ R $.And the multiply those two matrices in reverse to get a new matrix which has same eigen values as $A$
+
+\textbf{Steps in the QR Algorithm:}
+\begin{enumerate}
+    \item Start with a square matrix $ A_0 = A $.
+    \item Perform the QR decomposition:
+    \begin{align*}
+    A_k = Q_k R_k
+    \end{align*}
+    where $ Q_k $ is orthogonal ($ Q_k^T Q_k = I $), and $ R_k $ is upper triangular.
+    \item Form a new matrix by multiplying $ R_k $ and $ Q_k $:
+    \begin{align*}
+       A_{k+1} = R_k Q_k.
+    \end{align*}
+    
+    \item Repeat steps until $ A_k $ converges to an upper triangular matrix .
+\end{enumerate}
+
+After some iterations depending on matrix size, the matrix $ A_k $ converges, and its diagonal entries approximate the eigenvalues of the original matrix $ A $.
+
+
+
+\subsection{ QR Factorization}
+We can do QR factorization in many ways 
+\begin{enumerate}
+    \item Gram-Schmidt Algorithm
+    \item Householder Reflections for QR factorization
+\end{enumerate}
+Householder Transformation is chosen to compute the QR decomposition by systematically zeroing out elements below the diagonal of the matrix. 
+due to its Numerical stabilty,Precision, Robustness.
+\\
+\textbf{Definition:}  
+A Householder reflection is an orthogonal transformation defined as:
+\[
+H = I - 2 \frac{vv^T}{v^T v},
+\]
+where $ v $ is a vector chosen to zero out specific components of a column of $ A $.
+
+\textbf{Steps in Householder Reflections:}
+\begin{enumerate}
+    \item For a given column $ j $ of $ A $, construct a vector $ v $ such that:
+    \[
+    H_j A
+    \]
+    \item Multiply $ H_j $ to $ A $ from left to produce a new matrix:
+    \[
+    A' = H_j A.
+    \]
+    \item Repeat this process for each column until $ A $ is transformed into an upper triangular matrix $ R $.
+    \item Combine all Householder matrices $ H_1, H_2, \dots, H_{n-1} $ to form $ Q $:
+    \[
+    Q = H_1 H_2 \dots H_{n-1}.
+    \]
+\end{enumerate}
+
+\textbf{Advantages of Householder Reflections:}
+\begin{enumerate}
+    \item They are numerically stable, making them suitable for large matrices.
+    \item They are efficient for dense matrix computations.
+\end{enumerate}
+
+\section{Computational Complexity of the QR Algorithm with Householder Transformations}
+ The computational complexity of the algorithm is as follows:
+
+\subsection{ Matrix Multiplication}
+Multiplying two \(n \times n\) matrices requires \(O(n^3)\) operations. Since the algorithm repeatedly multiplies matrices during the iterative process, this operation dominates the runtime.
+
+\subsection{ Householder Transformation}
+The Householder transformation involves the following steps:
+\begin{enumerate}
+    \item 
+    \textbf{Vector Norms:} Each norm calculation requires \(O(n)\).
+    \item \textbf{Matrix-Vector Multiplications:} Each transformation requires \(O(n^2)\).
+    \item \textbf{Generating the Householder Matrix:} This requires \(O(n^2)\).
+    \item \textbf{Multiplying the Householder Matrix with the Input Matrix:} This takes \(O(n^3)\).
+\end{enumerate}
+Householder transformations are performed \(n-1\) times in the decomposition, so the total cost per iteration is \(O(n^3)\).
+
+\subsection{Conjugate Transpose}
+Taking the conjugate transpose of a matrix involves iterating over half the elements of the \(n \times n\) matrix. This step has a complexity of \(O(n^2)\).
+
+\subsection{Iterative QR Algorithm}
+In the main iterative loop:
+\begin{enumerate}
+    \item The matrix is multiplied with \(Q^*\) and then decomposed again into \(Q\) and \(R\) using the Householder procedure.
+    \item The off-diagonal elements are checked to ensure convergence.
+\end{enumerate}
+Each iteration involves:
+\begin{enumerate}
+    \item \textbf{Matrix Multiplication:} \(O(n^3)\).
+    \item \textbf{Householder Decomposition:} \(O(n^3)\).
+    \item \textbf{Convergence Check:} \(O(n^2)\).
+\end{enumerate}
+Thus, the cost per iteration is \(O(n^3)\).
+
+\subsection*{5. Convergence}
+The QR algorithm typically requires \(O(n)\) iterations to converge for well-conditioned matrices. In the worst case, convergence can take up to \(O(n^2)\) iterations for highly ill-conditioned matrices.
+
+\subsection*{Overall Complexity}
+Combining the above factors:
+\begin{enumerate}
+    \item Per iteration cost: \(O(n^3)\).
+    \item Number of iterations: \(O(n)\) (best case) to \(O(n^2)\) (worst case).
+\end{enumerate}
+
+\section{Advantages of QR Algorithm}
+
+\begin{enumerate}
+    \item All eigen values(complex and real) can be computed.
+    \item Maintains accuracy and robustness
+    \item  Supports complex matrices, making it versatile.
+   .
+    \item Efficient for small to dense matrices
+    \item Effective stopping criteria ensure convergence to eigenvalues.
+    \item  High accuracy with customizable tolerance levels.
+\end{enumerate}
+
+\section{Comparison with other Algorithms}
+
+This section compares the QR Algorithm with other Algorithms.
+
+\subsection*{Advantages of QR Algorithm over others}
+
+\begin{enumerate}
+  
+    \item Power Iteration method Finds only the largest eigenvalue.
+    \item It Converges slowly, especially when eigenvalues are close in magnitude.
+       \item Inverse Iteration Requires solving a linear system at each iteration, which increases Complexity.
+    \item Inverse Iteration highjly depends on shift selection; poor shifts may lead to divergence.
+
+
+
+    \item Rayleigh Quotient Iteration (RQI) is sensitive to the choice of the initial guess.
+    \item It focuses on a single eigenvalue at a time.
+    \item Matrix inversion incurs high computational cost.
+\end{enumerate}
+
+\subsection*{QR Algorithm}
+\textbf{Advantages:}
+\begin{enumerate}
+    \item Computes all eigenvalues simultaneously.
+    \item Robust for various matrix types, including symmetric, non-symmetric, and complex matrices.
+    \item Handles both real and complex eigenvalues automatically.
+    \item Convergence is linear to quadratic, depending on implementation.
+    \item Efficient for small to medium dense matrices.
+    \item Householder reflections and orthogonalization techniques improve numerical stability.
+    \item Requires no initial guess or manual intervention.
+\end{enumerate}
+\textbf{Limitations:}
+\begin{enumerate}
+    \item Computational cost is \(O(n^3)\), which can be prohibitive for very large matrices.
+    \item Requires more memory than Power Iteration and Inverse Iteration.
+\end{enumerate}
+
+\subsection*{Why QR Algorithm is the Best?}
+The QR Algorithm is the most versatile and robust choice for eigenvalue computation due to its ability to compute all eigenvalues in a single run, handle complex matrices, and ensure numerical stability. While other methods excel in specific scenarios (e.g., Rayleigh Quotient Iteration for single eigenvalue refinement), the QR Algorithm is a universal approach suitable for general eigenvalue problems, particularly for small to medium-sized dense matrices.
+
+\section{Description of the Program}
+
+The program is implemented in the C programming language. It operates on matrices through a custom structure that stores the dimensions of the matrix and a pointer to its elements. This design facilitates flexible and efficient handling of matrix operations.
+
+\subsection{Matrix Operations}
+All matrix-related operations are implemented as standalone functions, ensuring  reusability. These functions include basic operations such as matrix multiplication, transposition, and inverse, as well as more specialized routines.
+
+\subsection{QR Decomposition Using Householder Reflections}
+A  function decomposes the input matrix into \( Q \) and \( R \) matrices using the method of Householder reflections. This step is crucial for performing the QR algorithm.
+
+\subsection{Iterative Eigenvalue Computation}
+The main function iterates continuously, applying the QR decomposition until the matrix converges to an upper triangular  form. In the case of  triangular matrices that converge partially (some elements below diagnol will not be zero), which occur for some complex eigenvalue scenarios, the eigenvalues are calculated using the \texttt{printeigenvalues} function.
+
+\subsection{Program Features}
+\begin{enumerate}
+    \item The program allows the user to specify the tolerance value for convergence and the maximum number of iterations.
+    \item Eigenvalues, including complex ones, are computed and displayed based on the matrix's final form.
+   
+\end{enumerate}
+
+
+\section*{References}
+\begin{enumerate}
+    \item Wikipedia
+    \item Introduction to Applied Linear Algebra – Vectors, Matrices, and Least Squares
+Stephen Boyd and Lieven Vandenberghe.
+    \item Other online Sources like Youtube, Google etc.
+\end{enumerate}
+
+\end{document}
+
